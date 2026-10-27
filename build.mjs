@@ -1,5 +1,5 @@
 import { writeFileSync } from 'node:fs';
-const form='https://forms.gle/Y1uW4cvu5H2Kt9aPA';
+const form='https://tally.so/r/rDDdZR';
 const pages=[
 ['index','Home','⌂','Your next chapter starts here.',''],
 ['vision','Our vision','◎','A generation that builds a better future.','<p>Our vision is to raise a generation of principled, innovative, and capable people who build meaningful lives, create opportunities, and contribute to the progress of society.</p><p>We want young people to become independent thinkers, responsible leaders, creative problem-solvers, and people who use their growth to make life better for others.</p>'],
