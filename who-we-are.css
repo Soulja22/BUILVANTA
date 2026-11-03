@@ -1,0 +1,42 @@
+/* Who We Are page only. Shared navigation, global CSS and other pages remain unchanged. */
+.who-we-are-page{--who-paper:#fbfcf8;--who-ink:#1c241f;--who-muted:#58635d;--who-line:#dce3d9;--who-accent:#8b19f5;color-scheme:light;background:var(--who-paper);color:var(--who-ink)}
+.who-we-are-page .workspace{background:var(--who-paper)}
+.who-we-are-page .topbar{color:#4c5751}
+.who-we-are-page .topbar-note{color:#68736d}
+.who-we-are-page footer{color:#68736d}
+.who-we-are-page .sidebar{color:var(--text)}
+.who-we-are-page .article-main{padding:clamp(42px,6vw,84px) clamp(24px,5.2vw,82px) clamp(60px,8vw,108px)}
+.who-we-are-page .article-main article{width:100%;max-width:1120px;margin:0 auto}
+.who-we-are-page .article-main .eyebrow{color:#667443;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.who-we-are-page .article-main h1{max-width:900px;color:var(--who-ink);font-size:clamp(42px,6.5vw,78px);font-weight:600;letter-spacing:-.065em;line-height:1}
+.who-we-are-page .article-copy{margin-top:32px;color:var(--who-muted);font-size:16px;line-height:1.8}
+.who-we-are-page .article-copy p{margin:0 0 19px}
+.who-we-are-page .who-introduction{max-width:940px}
+.who-we-are-page .who-section-title{max-width:850px;margin:0 0 20px;color:#35413a;font-size:clamp(22px,3vw,32px);font-weight:550;letter-spacing:-.035em;line-height:1.28}
+.who-we-are-page .who-values-block{margin:36px 0 24px;padding:28px 0 0;border-top:1px solid var(--who-line)}
+.who-we-are-page .who-values-block h3{margin:0 0 16px;color:var(--who-ink);font-size:19px;font-weight:600;letter-spacing:-.025em}
+.who-we-are-page .who-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin:0;padding:0;list-style:none}
+.who-we-are-page .who-values li{position:relative;min-width:0;padding:16px 17px 16px 39px;border:1px solid var(--who-line);border-radius:12px;background:#fff;color:#4d5951;font-size:14px;line-height:1.65}
+.who-we-are-page .who-values li::before{position:absolute;top:23px;left:17px;width:8px;height:8px;border-radius:50%;background:var(--primary-cta-gradient);content:""}
+.who-we-are-page .who-welcome{max-width:880px;margin-top:24px!important;color:#35413a}
+.who-we-are-page .who-profile{margin-top:clamp(68px,9vw,112px);padding-top:clamp(28px,4.5vw,52px);border-top:1px solid var(--who-line)}
+.who-we-are-page .who-profile__heading{margin:0 0 26px}
+.who-we-are-page .who-overline{margin:0 0 10px;color:#788843;font-size:10px;font-weight:700;letter-spacing:.2em;line-height:1.5;text-transform:uppercase}
+.who-we-are-page .who-profile__heading h2{max-width:900px;margin:0;color:var(--who-ink);font-size:clamp(32px,5vw,58px);font-weight:560;letter-spacing:-.055em;line-height:1.08}
+.who-we-are-page .who-profile__grid{display:grid;grid-template-columns:minmax(230px,.68fr) minmax(0,1.32fr);align-items:start;gap:clamp(28px,5vw,68px)}
+.who-we-are-page .who-profile__portrait{width:100%;max-width:370px;margin:0;padding:7px;border:1px solid var(--who-line);border-radius:18px;background:linear-gradient(145deg,#fff,#f4f6f1);box-shadow:0 18px 46px rgba(30,45,35,.09)}
+.who-we-are-page .who-profile__portrait img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;border-radius:11px;background:#050505}
+.who-we-are-page .who-profile__details{min-width:0}
+.who-we-are-page .who-profile__identity{margin:0 0 24px;padding:0 0 20px;border-bottom:1px solid var(--who-line)}
+.who-we-are-page .who-profile__identity h3{margin:0;color:var(--who-ink);font-size:clamp(28px,3.3vw,40px);font-weight:620;letter-spacing:-.05em;line-height:1.08}
+.who-we-are-page .who-profile__role{margin:8px 0 9px!important;color:#667443;font-size:14px;font-weight:650;line-height:1.5}
+.who-we-are-page .who-profile__profession{margin:0!important;color:#68736d;font-size:13px;font-weight:600;line-height:1.6}
+.who-we-are-page .who-profile__bio{max-width:760px;color:var(--who-muted);font-size:15px;line-height:1.82}
+.who-we-are-page .who-profile__bio p{margin:0 0 18px}
+.who-we-are-page .who-profile__bio p:last-child{margin-bottom:0}
+.who-we-are-page .who-profile__bio strong{color:#35413a;font-weight:650}
+.who-we-are-page .article-join{margin-top:28px}
+@media(max-width:1000px){.who-we-are-page .who-profile__grid{grid-template-columns:minmax(0,1fr);gap:27px}.who-we-are-page .who-profile__portrait{width:min(100%,390px)}.who-we-are-page .who-profile__details{max-width:850px}}
+@media(max-width:700px){.who-we-are-page .article-main{padding:34px 22px 64px}.who-we-are-page .article-main h1{font-size:clamp(42px,11.5vw,62px)}.who-we-are-page .article-copy{margin-top:26px;font-size:15px}.who-we-are-page .who-section-title{font-size:24px}.who-we-are-page .who-values-block{margin-top:29px;padding-top:23px}.who-we-are-page .who-profile{margin-top:62px;padding-top:28px}.who-we-are-page .who-profile__heading{margin-bottom:21px}.who-we-are-page .who-profile__heading h2{font-size:clamp(31px,8.5vw,42px)}.who-we-are-page .who-profile__grid{gap:23px}.who-we-are-page .who-profile__portrait{width:min(100%,360px);padding:6px;border-radius:15px}.who-we-are-page .who-profile__portrait img{border-radius:10px}.who-we-are-page .who-profile__identity{margin-bottom:20px;padding-bottom:18px}.who-we-are-page .who-profile__bio{font-size:14px;line-height:1.8}}
+@media(max-width:520px){.who-we-are-page .who-values{grid-template-columns:1fr;gap:8px}.who-we-are-page .who-values li{padding-block:14px}.who-we-are-page .who-values li::before{top:21px}}
+@media(max-width:360px){.who-we-are-page .article-main{padding-inline:18px}.who-we-are-page .who-profile__portrait{width:100%}}
