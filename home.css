@@ -1,0 +1,16 @@
+/* Homepage hero panel only. Do not affect the shared header, footer, sidebar or other pages. */
+.home-page .workspace{height:auto;min-height:100svh}
+.home-page .home-main{flex:0 0 auto;align-items:stretch;justify-content:center;min-height:0;padding-block:0;background:#212121}
+.home-page .welcome-panel{display:flex;width:min(720px,100%);align-items:center;justify-content:center;padding-block:clamp(30px,5vh,52px);padding-inline:0;background:#fff;color:#171717}
+.home-page .welcome{width:min(640px,100%);color:#171717}
+.home-page .welcome .eyebrow{margin:0 0 14px;color:#68736d;font-size:10px;font-weight:700;letter-spacing:.16em;line-height:1.5}
+.home-page .welcome h1{max-width:720px;margin:0 auto;color:#171717;font-size:clamp(34px,4.2vw,54px);font-weight:700;letter-spacing:-.055em;line-height:1.07;text-wrap:balance;overflow-wrap:normal}
+.home-page .welcome .intro{color:#58635d;font-size:15px;line-height:1.5;margin:16px 0 32px}
+.home-page .welcome .support{color:#68736d}
+.home-page footer{margin-top:auto}
+@media(max-width:700px){.home-page .welcome-panel{padding-block:clamp(28px,5vh,42px)}.home-page .welcome .eyebrow{font-size:9px;letter-spacing:.13em}.home-page .welcome h1{font-size:clamp(34px,9vw,42px);line-height:1.08}.home-page .welcome .intro{font-size:14px;margin:14px 0 28px}}
+@media(max-width:360px){.home-page .welcome h1{font-size:34px}.home-page .welcome .eyebrow{font-size:8px;letter-spacing:.11em}}
+
+@media(max-width:900px){.home-page .home-main{padding-inline:14px}.home-page .welcome-panel{padding-inline:14px}}
+@media(max-width:700px){.home-page .home-main{padding-inline:12px}.home-page .welcome-panel{padding-inline:12px}}
+@media(max-width:360px){.home-page .home-main{padding-inline:9px}.home-page .welcome-panel{padding-inline:9px}}
