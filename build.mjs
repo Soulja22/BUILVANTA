@@ -194,24 +194,61 @@ const visionBody=`
     <a class="vision-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the BUILVANTA community <span aria-hidden="true">↗</span></a>
   </div>
 </section>`;
+const whatWeBuildBody=`
+<p class="build-hero__support">At BUILVANTA, growth goes beyond individual success. We develop people who think, create, collaborate and contribute to the world around them.</p>
+<section class="build-pillars" aria-label="The five ways BUILVANTA builds">
+  <article class="build-card" aria-labelledby="build-yourself-heading">
+    <div class="build-card__top"><span class="build-card__number">01</span><span class="build-card__icon" aria-hidden="true"><img src="assets/icons/what-we-build/sprout.svg" width="27" height="27" alt=""></span></div>
+    <h2 id="build-yourself-heading">Build Yourself</h2>
+    <p>Develop confidence, discipline, self-awareness and the habits to become a better version of yourself.</p>
+  </article>
+  <article class="build-card" aria-labelledby="build-mind-heading">
+    <div class="build-card__top"><span class="build-card__number">02</span><span class="build-card__icon" aria-hidden="true"><img src="assets/icons/what-we-build/brain.svg" width="27" height="27" alt=""></span></div>
+    <h2 id="build-mind-heading">Build Your Mind</h2>
+    <p>Think independently, ask questions, explore ideas and make informed decisions.</p>
+  </article>
+  <article class="build-card" aria-labelledby="build-value-heading">
+    <div class="build-card__top"><span class="build-card__number">03</span><span class="build-card__icon" aria-hidden="true"><img src="assets/icons/what-we-build/lightbulb.svg" width="27" height="27" alt=""></span></div>
+    <h2 id="build-value-heading">Build Value</h2>
+    <p>Develop practical skills, explore technology, entrepreneurship and innovation, and learn to solve real problems.</p>
+  </article>
+  <article class="build-card" aria-labelledby="build-together-heading">
+    <div class="build-card__top"><span class="build-card__number">04</span><span class="build-card__icon" aria-hidden="true"><img src="assets/icons/what-we-build/users-round.svg" width="27" height="27" alt=""></span></div>
+    <h2 id="build-together-heading">Build Together</h2>
+    <p>Collaborate, share perspectives, respect differences and grow through teamwork.</p>
+  </article>
+  <article class="build-card" aria-labelledby="build-others-heading">
+    <div class="build-card__top"><span class="build-card__number">05</span><span class="build-card__icon" aria-hidden="true"><img src="assets/icons/what-we-build/hand-heart.svg" width="27" height="27" alt=""></span></div>
+    <h2 id="build-others-heading">Build Others</h2>
+    <p>Lead with integrity, mentor others, serve your community and create opportunities for people to grow.</p>
+  </article>
+</section>
+<section class="build-closing" aria-labelledby="build-closing-heading">
+  <p class="build-closing__label">OUR SHARED RESPONSIBILITY</p>
+  <h2 id="build-closing-heading">Growth is a responsibility.</h2>
+  <p class="build-closing__support">Build yourself. Create value. Help others rise.</p>
+  <a class="article-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a>
+</section>
+`;
 const pages=[
 ['index','Home','⌂','Your next chapter starts here.',''],
 ['vision','Our vision','◎','A generation that builds a better future.',visionBody],
 ['mission','Our mission','↗','Move from potential to purpose.',missionBody],
-['what-we-build','What we build','⊞','Five ways we build.','<p>BUILVANTA is built around five connected areas of growth. Each supports the others: personal development gives direction, clear thinking and useful skills equip action, and collaboration and service extend its impact.</p>'+[['Build Yourself','Develop self-awareness, discipline, confidence, communication, and habits that help you set goals and follow through.'],['Build Your Mind','Ask thoughtful questions, assess information, consider different perspectives, and make informed decisions for yourself.'],['Build Value','Explore entrepreneurship, financial literacy, digital skills, technology, AI, and practical ways to solve real problems.'],['Build Together','Practise listening, teamwork, collaboration, and responsible leadership while working across different experiences and viewpoints.'],['Build Others','Use mentorship, service, integrity, and what you learn to encourage others and help create room for them to grow.']].map(([t,p],i)=>`<section class="pillar"><span>0${i+1}</span><div><h2>${t}</h2><p>${p}</p></div></section>`).join('')+'<p>These are not separate lanes or finish lines. They form a cycle: grow as a person, apply what you learn, make something useful, and help others progress.</p>'],
+['what-we-build','What we build','⊞','Five Ways We Build.',whatWeBuildBody],
 ['who-we-are','Who we are','♧','For young people who want to become more.','<p>BUILVANTA is a youth-development movement for young people, beginning with those aged 15–20. It is for learners, creators, and emerging leaders who are curious about what they can become and ready to take steady steps toward it.</p><p>You may be choosing a direction, building confidence, exploring a skill, or looking for a community to learn alongside. You do not need a polished plan or a track record. A willingness to learn, contribute, and keep going is enough to begin.</p><h2>What brings us together</h2><ul><li>We value growth and effort over appearances.</li><li>We stay curious, ask questions, and remain open to learning.</li><li>We aim to use our abilities responsibly and create value for others.</li><li>We respect different experiences and make space for people to contribute.</li></ul><p>We welcome young people from different backgrounds, communities, and beliefs. We aim to meet each person with respect, encourage positive ambition, and make room for different experiences and ideas.</p>'],
 ['philosophy','Our philosophy','▤','Build Yourself. Build Value. Build Others.','<p>At BUILVANTA, building starts on the inside. Lasting progress asks us to grow our judgement and character, apply our abilities to real needs, and share the value we create.</p><h2>Three principles, one practice</h2><ul><li><strong>Build Yourself.</strong> Develop your mindset, self-awareness, abilities, and character so you can take responsibility for your own growth.</li><li><strong>Build Value.</strong> Use what you know to solve problems, create useful work, and contribute to opportunities around you.</li><li><strong>Build Others.</strong> Lead with integrity, collaborate, share what you learn, and help other people move forward.</li></ul><p>These principles are connected. Personal growth without contribution can become self-centred; service without strong foundations is difficult to sustain. We want young people to connect who they are becoming with what they create and how they treat others.</p><p>We value progress over appearance, responsibility over shortcuts, learning over assumption, and lasting contribution over recognition. The goal is not simply to talk about success, but to build it with purpose and use it well.</p>']
 ];
 const missionOnly=process.argv.includes('--mission-only');
+const whatWeBuildOnly=process.argv.includes('--what-we-build-only');
 for(const [id,label,icon,title,body] of pages){
   const home=id==='index';
-  if(home||(missionOnly&&id!=='mission')) continue; // Keep the homepage and unrelated pages untouched.
-  const bodyClass=id==='vision'?'content-page vision-page':id==='mission'?'content-page mission-page':'content-page';
-  const description=id==='vision'?'BUILVANTA envisions a principled, innovative generation building a better future through mindset, collaboration, leadership, and service.':id==='mission'?'BUILVANTA develops young people to create value and help build a better future, beginning in Ekiti State with a global ambition.':'BUILVANTA empowers young people to think independently, develop useful skills, create value, and build a better future.';
-  const articleJoin=(id==='vision'||id==='mission')?'':`<a class="article-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a>`;
+  if(home||(missionOnly&&id!=='mission')||(whatWeBuildOnly&&id!=='what-we-build')) continue; // Keep the homepage and unrelated pages untouched.
+  const bodyClass=id==='vision'?'content-page vision-page':id==='mission'?'content-page mission-page':id==='what-we-build'?'content-page what-build-page':'content-page';
+  const description=id==='vision'?'BUILVANTA envisions a principled, innovative generation building a better future through mindset, collaboration, leadership, and service.':id==='mission'?'BUILVANTA develops young people to create value and help build a better future, beginning in Ekiti State with a global ambition.':id==='what-we-build'?'BUILVANTA develops people through personal growth, independent thinking, practical skills, collaboration and service.':'BUILVANTA empowers young people to think independently, develop useful skills, create value, and build a better future.';
+  const articleJoin=(id==='vision'||id==='mission'||id==='what-we-build')?'':`<a class="article-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a>`;
   const mainContent=home?`<div class="welcome"><img class="welcome-logo" src="assets/brand/builvanta-mark.png" alt="BUILVANTA" width="72" height="72"><p class="eyebrow">BUILD YOURSELF. BUILD VALUE. BUILD OTHERS.</p><h1>${title}</h1><p class="intro">A generation of builders. A place for you.</p><a class="join-button" href="${form}" target="_blank" rel="noopener noreferrer"><span>CLICK HERE TO JOIN<br class="mobile-break"> BUILVANTA COMMUNITY</span><span class="button-arrow" aria-hidden="true">↗</span></a><p class="support">Your journey to becoming a builder starts here.</p></div>`:id==='mission'?`<article><div class="article-copy">${body}</div></article>`:`<article><p class="eyebrow">${label}</p><h1>${title}</h1><div class="article-copy">${body}</div>${articleJoin}</article>`;
   writeFileSync(new URL(id+'.html',import.meta.url),`<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#212121"><meta name="description" content="${description}"><title>BUILVANTA | ${home?'The Generation That Builds':label}</title><link rel="icon" href="assets/brand/builvanta-mark.png" type="image/png" sizes="512x512"><link rel="stylesheet" href="styles.css">${id==='mission'?'<link rel="stylesheet" href="mission.css">':''}<script src="script.js" defer></script></head><body class="${bodyClass}"><a class="skip" href="#main">Skip to content</a><button class="backdrop" tabindex="-1" aria-label="Close navigation" hidden></button>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#212121"><meta name="description" content="${description}"><title>BUILVANTA | ${home?'The Generation That Builds':label}</title><link rel="icon" href="assets/brand/builvanta-mark.png" type="image/png" sizes="512x512"><link rel="stylesheet" href="styles.css">${id==='mission'?'<link rel="stylesheet" href="mission.css">':id==='what-we-build'?'<link rel="stylesheet" href="what-we-build.css">':''}<script src="script.js" defer></script></head><body class="${bodyClass}"><a class="skip" href="#main">Skip to content</a><button class="backdrop" tabindex="-1" aria-label="Close navigation" hidden></button>
 <aside class="sidebar" id="sidebar"><div class="sidebar-brand"><a href="index.html" class="brand" aria-label="BUILVANTA home"><img class="brand-image" src="assets/brand/builvanta-mark.png" alt="" width="40" height="40"></a><button class="close-menu icon-button" aria-label="Close navigation">×</button></div><nav aria-label="Main navigation">${pages.map(([pid,plabel,picon])=>`<a href="${pid}.html" ${pid===id?'aria-current="page"':''}><span class="nav-icon" aria-hidden="true">${picon}</span>${plabel}</a>`).join('')}</nav><div class="sidebar-bottom"><span class="little-mark" aria-hidden="true"><img src="assets/brand/builvanta-mark.png" alt="" width="29" height="29"></span><div><strong>The generation that builds.</strong><p>Build Yourself. Build Value. Build Others.</p></div></div></aside>
 <div class="workspace"><header class="topbar"><button class="open-menu icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button><span>${home?'BUILVANTA':label}</span><span class="topbar-note">The generation that builds.</span></header><main id="main" tabindex="-1" class="${home?'home-main':'article-main'}">${mainContent}</main><footer>© <span id="year">2026</span> BUILVANTA<span class="footer-separator">·</span>The future is something we build.</footer></div></body></html>`);
 }

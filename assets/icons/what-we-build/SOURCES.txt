@@ -1,0 +1,15 @@
+BUILVANTA — What We Build page icons
+
+The following SVG icon files are adapted from Lucide Icons:
+sprout.svg, brain.svg, lightbulb.svg, users-round.svg, hand-heart.svg
+
+Official icon source: https://github.com/lucide-icons/lucide/tree/main/icons
+Official license: https://github.com/lucide-icons/lucide/blob/main/LICENSE
+License copy is included in LICENSE.txt. Icon strokes were recolored white for use on BUILVANTA's gradient chips.
+
+Lucide's icon pages:
+https://lucide.dev/icons/sprout
+https://lucide.dev/icons/brain
+https://lucide.dev/icons/lightbulb
+https://lucide.dev/icons/users-round
+https://lucide.dev/icons/hand-heart
