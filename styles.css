@@ -4,3 +4,70 @@
 @media(max-width:360px){.topbar-note{display:none}.home-main{padding-inline:18px}.join-button{padding:17px 14px;font-size:10px}.intro{font-size:12px}.eyebrow{font-size:7px}.support{font-size:9px}h1{font-size:27px}footer{font-size:8px}}
 @media(max-height:600px){.home-main{padding-top:10px;padding-bottom:10px}.welcome-symbol{font-size:30px;margin-bottom:12px}.intro{margin:10px 0 15px}.join-button{padding-block:15px}.support{margin-top:10px}.topbar{height:55px}.sidebar-brand{margin-bottom:20px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Existing content-page section heading style. */
+.article-copy h2{font-size:17px;font-weight:500;color:var(--text);margin:28px 0 10px}
+
+/* Vision page only: editorial, image-led journey. */
+.vision-page{--vision-paper:#fbfcf8;--vision-ink:#1c241f;--vision-muted:#58635d;--vision-line:#dce3d9;--vision-accent:#a4cf43;color-scheme:light;background:var(--vision-paper);color:var(--vision-ink)}
+.vision-page .workspace{background:var(--vision-paper)}
+.vision-page .topbar{color:#4c5751}
+.vision-page .topbar-note{color:#68736d}
+.vision-page footer{color:#68736d}
+.vision-page .sidebar{color:var(--text)}
+.vision-page .article-main{padding:clamp(42px,6vw,88px) clamp(24px,5.2vw,82px) clamp(56px,8vw,112px)}
+.vision-page .article-main article{width:100%;max-width:1180px;margin:0 auto}
+.vision-page .article-main .eyebrow{color:#667443;font-size:10px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.vision-page .article-main h1{max-width:900px;color:var(--vision-ink);font-size:clamp(44px,7vw,88px);font-weight:600;letter-spacing:-.065em;line-height:.98}
+.vision-page .article-copy{margin-top:34px;color:var(--vision-muted);font-size:16px;line-height:1.8}
+.vision-page .article-copy p{margin:0 0 20px}
+.vision-page .vision-opening{max-width:880px}
+.vision-page .vision-opening__lead{font-size:clamp(19px,2.25vw,25px);line-height:1.58;color:#35413a;letter-spacing:-.018em}
+.vision-page .vision-quote{margin:42px 0 84px;padding:22px 28px;border-left:4px solid transparent;border-image:linear-gradient(180deg,#d1f58a,#68c9a9,#a997e8) 1;background:linear-gradient(100deg,rgba(209,245,138,.12),rgba(104,201,169,.05) 58%,rgba(169,151,232,.07))}
+.vision-page .vision-quote p{max-width:790px;margin:0;color:#253128;font-size:clamp(23px,3vw,36px);font-weight:500;line-height:1.35;letter-spacing:-.035em}
+.vision-page .vision-overline,.vision-page .vision-stage__label{color:#778842;font-size:10px;font-weight:700;letter-spacing:.18em;line-height:1.5;text-transform:uppercase}
+.vision-page .vision-roles{max-width:980px;margin:0 auto 70px}
+.vision-page .vision-roles h2,.vision-page .vision-future h2{max-width:760px;margin:0 0 18px;color:var(--vision-ink);font-size:clamp(30px,4vw,48px);font-weight:550;letter-spacing:-.045em;line-height:1.12}
+.vision-page .vision-roles>p:not(.vision-overline):not(.vision-note){max-width:760px}
+.vision-page .vision-role-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px;margin:28px 0 12px}
+.vision-page .vision-role-list div{border-top:1px solid var(--vision-line);padding:18px 0 16px}
+.vision-page .vision-role-list dt{color:#26332a;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.vision-page .vision-role-list dd{margin:6px 0 0;color:var(--vision-muted);font-size:14px;line-height:1.7}
+.vision-page .vision-note{margin-top:16px;color:#6a756c;font-size:13px;font-style:italic}
+.vision-page .vision-stage{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(280px,.94fr);grid-template-areas:"copy image";align-items:center;gap:clamp(30px,5vw,76px);margin:0 0 clamp(76px,10vw,132px);padding-top:clamp(28px,4vw,52px);border-top:1px solid var(--vision-line)}
+.vision-page .vision-stage--image-left{grid-template-areas:"image copy"}
+.vision-page .vision-stage__copy{grid-area:copy}
+.vision-page .vision-stage__copy h2{max-width:520px;margin:10px 0 18px;color:var(--vision-ink);font-size:clamp(29px,3.8vw,46px);font-weight:550;letter-spacing:-.05em;line-height:1.1}
+.vision-page .vision-stage__copy p:not(.vision-stage__label){color:var(--vision-muted)}
+.vision-page .vision-stage__figure{grid-area:image;min-width:0;margin:0}
+.vision-page .vision-stage__figure img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:18px;background:#e9ece7}
+.vision-page .vision-stage__figure figcaption{margin:12px 2px 0;color:#606c64;font-size:12px;font-style:italic;line-height:1.55}
+.vision-page .vision-ideas{list-style:none;margin:24px 0 0;padding:0}
+.vision-page .vision-ideas li{display:grid;grid-template-columns:minmax(145px,.75fr) minmax(0,1.25fr);gap:14px;border-top:1px solid var(--vision-line);padding:11px 0;color:var(--vision-muted);font-size:13px;line-height:1.55}
+.vision-page .vision-ideas strong{color:#354239;font-size:12px}
+.vision-page .vision-future{max-width:940px;margin:0 auto}
+.vision-page .vision-closing{margin-top:42px;padding:clamp(26px,4vw,48px);border-top:4px solid transparent;border-image:linear-gradient(90deg,#c9ed6b,#70c9ae,#aa99e5) 1;background:linear-gradient(115deg,rgba(209,245,138,.16),rgba(115,203,176,.08) 60%,rgba(169,151,232,.10))}
+.vision-page .vision-closing__statement{max-width:810px;margin:0 0 18px;color:#202b23;font-size:clamp(31px,5vw,58px);font-weight:600;letter-spacing:-.055em;line-height:1.04;text-transform:uppercase}
+.vision-page .vision-closing__brand{margin:0 0 5px;color:#344131;font-size:12px;font-weight:700;letter-spacing:.12em}
+.vision-page .vision-closing__philosophy{margin:0;color:#56634c;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.vision-page .vision-join{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;margin-top:27px;padding:14px 18px;border-radius:9px;background:#d1f58a;color:#20251a;font-size:13px;font-weight:700;transition:transform .2s,background .2s}
+.vision-page .vision-join:hover{transform:translateY(-2px);background:#def9ae}
+.vision-page .vision-join span{font-size:20px;line-height:1}
+.vision-page .vision-film{width:100%;max-width:1060px;margin:clamp(34px,4.5vw,56px) auto clamp(58px,7vw,92px)}
+.vision-page .vision-film video{display:block;width:100%;height:auto;max-height:72svh;aspect-ratio:16/9;object-fit:contain;border-radius:18px;background:#111;box-shadow:0 18px 52px rgba(21,31,24,.12)}
+@media(max-width:900px){.vision-page .article-main{padding-inline:clamp(24px,4vw,46px)}.vision-page .vision-stage{grid-template-columns:minmax(0,1fr) minmax(250px,.9fr);gap:28px}.vision-page .vision-ideas li{grid-template-columns:1fr;gap:3px}}
+@media(max-width:700px){.vision-page .article-main{padding:34px 22px 64px}.vision-page .article-main h1{font-size:clamp(42px,12vw,62px)}.vision-page .article-copy{margin-top:26px;font-size:15px}.vision-page .vision-quote{margin:30px 0 58px;padding:18px 20px}.vision-page .vision-roles{margin-bottom:54px}.vision-page .vision-role-list{grid-template-columns:1fr;gap:0}.vision-page .vision-stage,.vision-page .vision-stage--image-left{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "image";gap:22px;margin-bottom:64px;padding-top:28px}.vision-page .vision-stage__figure img{border-radius:14px}.vision-page .vision-stage__copy h2{font-size:34px}.vision-page .vision-ideas li{grid-template-columns:minmax(0,1fr);gap:3px}.vision-page .vision-future h2{font-size:34px}.vision-page .vision-closing{margin-top:30px;padding:25px 20px}.vision-page .vision-closing__statement{font-size:clamp(30px,9vw,44px)}.vision-page .vision-film{margin:30px auto 58px}.vision-page .vision-film video{max-height:62svh;border-radius:12px}}
+@media(max-width:360px){.vision-page .article-main{padding-inline:18px}.vision-page .vision-quote{padding-inline:16px}.vision-page .vision-role-list dd{font-size:13px}}
+
+/* Image-only BUILVANTA emblem used consistently across site headers and favicon. */
+.brand{width:40px;height:40px;gap:0;padding:0}
+.brand-image{display:block;width:40px;height:40px;object-fit:contain;border-radius:5px}
+.little-mark{display:block;flex:0 0 29px;width:29px;height:29px;border:0;border-radius:4px;overflow:hidden;color:inherit}
+.little-mark img{display:block;width:29px;height:29px;object-fit:contain;border-radius:4px}
+.welcome-logo{display:block;width:72px;height:72px;object-fit:contain;margin:0 auto 28px;border-radius:10px}
+@media(max-width:700px){.welcome-logo{width:64px;height:64px;margin-bottom:25px}}
+@media(max-width:360px){.welcome-logo{width:58px;height:58px}}
+@media(max-height:600px){.welcome-logo{width:48px;height:48px;margin-bottom:12px}}
+
+/* Preserve the full-width composition of the replacement leadership photo. */
+.vision-page .vision-stage--leadership .vision-stage__figure img{aspect-ratio:16/9}

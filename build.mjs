@@ -1,17 +1,126 @@
 import { writeFileSync } from 'node:fs';
 const form='https://tally.so/r/rDDdZR';
+const visionBody=`
+<section class="vision-opening" aria-label="Our vision statement">
+  <p class="vision-opening__lead">We envision a generation of principled, innovative, capable, and responsible individuals who do more than dream about a better future — they develop the mindset, character, knowledge, and skills to create it.</p>
+  <p>We envision young people who understand that their future is not something they simply wait for. It is something they prepare for, work towards, and build through intentional decisions, continuous learning, courage, and meaningful action.</p>
+  <p>A generation that thinks independently, questions constructively, creates opportunities, solves problems, and understands that personal success becomes even more meaningful when it contributes to the progress of others.</p>
+  <blockquote class="vision-quote"><p>“We see a generation that does not merely inherit the future, but takes responsibility for building it.”</p></blockquote>
+</section>
+<section class="vision-film" aria-label="BUILVANTA film: Different Beginnings, One Future">
+  <video controls playsinline preload="metadata" controlslist="nodownload noremoteplayback" disablepictureinpicture aria-label="BUILVANTA — Different Beginnings, One Future">
+    <source src="assets/videos/vision-intro.mp4" type="video/mp4">
+    Your browser does not support the HTML video element.
+  </video>
+</section>
+<section class="vision-roles" aria-labelledby="vision-roles-heading">
+  <p class="vision-overline">The people behind the progress</p>
+  <h2 id="vision-roles-heading">The generation we hope to raise</h2>
+  <p>BUILVANTA is not simply interested in what young people can become individually. We are interested in the kind of people they become and the impact they make.</p>
+  <dl class="vision-role-list">
+    <div><dt>The thinker</dt><dd>Someone who reasons, questions, learns, and makes informed decisions rather than simply following the crowd.</dd></div>
+    <div><dt>The creator</dt><dd>Someone who transforms ideas into useful solutions, products, services, and opportunities.</dd></div>
+    <div><dt>The leader</dt><dd>Someone who takes responsibility, demonstrates integrity, serves others, and leads through positive example.</dd></div>
+    <div><dt>The innovator</dt><dd>Someone who embraces new possibilities and uses creativity and emerging technologies to solve real problems.</dd></div>
+    <div><dt>The builder</dt><dd>Someone who develops themselves, creates value, strengthens communities, and helps others grow.</dd></div>
+  </dl>
+  <p class="vision-note">These are not titles to be awarded. They are qualities we want to cultivate in the next generation.</p>
+</section>
+<section class="vision-stage vision-stage--image-right" aria-labelledby="vision-mindset-heading">
+  <div class="vision-stage__copy">
+    <p class="vision-stage__label">01 / The power of mindset</p>
+    <h2 id="vision-mindset-heading">The future we see</h2>
+    <p>We see a future where young people are not limited by the circumstances they were born into, the opportunities they were denied, or the expectations society places on them. We see young people who discover their abilities early, develop their potential intentionally, and gain the confidence to pursue meaningful goals.</p>
+    <ul class="vision-ideas">
+      <li><strong>Think beyond limitations</strong><span>Be curious, independent-minded, informed, and willing to challenge assumptions.</span></li>
+      <li><strong>Create instead of only consuming</strong><span>Use knowledge, technology, creativity, and innovation to develop solutions and create value.</span></li>
+      <li><strong>Live with purpose and integrity</strong><span>Ground ambition in discipline, responsibility, honesty, and character.</span></li>
+      <li><strong>Build meaningful opportunities</strong><span>Develop skills, explore entrepreneurship, embrace innovation, and contribute to economic growth.</span></li>
+      <li><strong>Lift others as you grow</strong><span>Measure progress by personal achievement and the positive difference you make.</span></li>
+    </ul>
+  </div>
+  <figure class="vision-stage__figure">
+    <img src="assets/images/vision/vision-mindset.webp" alt="A young student in a white dotted headscarf writes in her notebook in a classroom, with classmates learning behind her." width="2000" height="1333" loading="eager" fetchpriority="high" decoding="async">
+    <figcaption>“Every better future begins with a mind willing to grow.”</figcaption>
+  </figure>
+</section>
+<section class="vision-stage vision-stage--image-left" aria-labelledby="vision-innovation-heading">
+  <div class="vision-stage__copy">
+    <p class="vision-stage__label">02 / The power of innovation</p>
+    <h2 id="vision-innovation-heading">Learn, imagine, create.</h2>
+    <p>We imagine young people who transform their curiosity into useful ideas. They explore new possibilities, understand emerging technologies, and put what they learn to work on real problems.</p>
+    <p>Innovation is not only about having a new idea. It is the courage to experiment, the patience to learn from what does not work, and the determination to keep shaping a solution that creates value.</p>
+  </div>
+  <figure class="vision-stage__figure">
+    <img src="assets/images/vision/vision-innovation.webp" alt="Three teenagers work together on a small robotics project at a table, testing parts and sharing ideas." width="2000" height="1333" loading="lazy" decoding="async">
+    <figcaption>“Tomorrow belongs to those who are willing to learn, create, and build today.”</figcaption>
+  </figure>
+</section>
+<section class="vision-stage vision-stage--image-right" aria-labelledby="vision-collaboration-heading">
+  <div class="vision-stage__copy">
+    <p class="vision-stage__label">03 / The power of collaboration</p>
+    <h2 id="vision-collaboration-heading">Progress is built together.</h2>
+    <p>No generation builds a better future alone. It takes people who share knowledge, listen with respect, challenge one another constructively, and bring different strengths to a common purpose.</p>
+    <p>When young people learn to work across differences, an individual idea can become a shared opportunity — and a community can move further than any one person could alone.</p>
+  </div>
+  <figure class="vision-stage__figure">
+    <img src="assets/images/vision/vision-collaboration.webp" alt="Two women and a man gather around an open laptop, sharing attention and discussing the screen." width="2000" height="1333" loading="lazy" decoding="async">
+    <figcaption>“Great things are built when people bring their ideas, abilities, and strengths together.”</figcaption>
+  </figure>
+</section>
+<section class="vision-stage vision-stage--image-left vision-stage--leadership" aria-labelledby="vision-leadership-heading">
+  <div class="vision-stage__copy">
+    <p class="vision-stage__label">04 / The power of leadership</p>
+    <h2 id="vision-leadership-heading">Lead by taking responsibility.</h2>
+    <p>We want to see more responsible leaders, creative problem-solvers, and ethical entrepreneurs. Leadership is not simply about standing ahead; it is about acting with integrity, serving with purpose, and helping people move forward together.</p>
+    <p>A better society begins with people willing to become better themselves. The knowledge we acquire should help us solve problems. The influence we gain should be used responsibly. The opportunities we create should open doors for others.</p>
+  </div>
+  <figure class="vision-stage__figure">
+    <img src="assets/images/vision/vision-leadership.webp" alt="A diverse group of young professionals pose together, including a doctor and construction workers wearing hard hats and safety vests." width="1672" height="941" loading="lazy" decoding="async">
+    <figcaption>“Leadership is not simply about standing ahead. It is about taking responsibility and helping others move forward.”</figcaption>
+  </figure>
+</section>
+<section class="vision-stage vision-stage--image-right" aria-labelledby="vision-building-heading">
+  <div class="vision-stage__copy">
+    <p class="vision-stage__label">05 / The power of building others</p>
+    <h2 id="vision-building-heading">Let your growth make room for others.</h2>
+    <p>Personal development should not end with personal achievement. We want young people to grow into adults who are prepared not only to succeed in life, but also to make life better for others.</p>
+    <p>Stronger communities are built when people share what they know, mentor with care, and turn their own progress into encouragement and opportunity for someone else.</p>
+  </div>
+  <figure class="vision-stage__figure">
+    <img src="assets/images/vision/vision-building-others.webp" alt="A volunteer in a blue shirt leads an outdoor activity with a gathered group of children." width="2000" height="1331" loading="lazy" decoding="async">
+    <figcaption>“True growth becomes meaningful when it creates room for others to grow.”</figcaption>
+  </figure>
+</section>
+<section class="vision-future" aria-labelledby="vision-future-heading">
+  <p class="vision-overline">A future we build together</p>
+  <h2 id="vision-future-heading">Our beginning is local. Our vision reaches further.</h2>
+  <p>We are beginning with young people aged 15–20 in Ekiti State, Nigeria, but our vision is much bigger than our starting point. The impact we imagine reaches families, communities, industries, and society as a whole.</p>
+  <p>It will take learning, mentorship, collaboration, courage, opportunity, and a willingness to keep growing. We may begin with a small community, but the future we want to help build belongs to all of us.</p>
+  <div class="vision-closing">
+    <p class="vision-closing__statement">The future is not something we wait for. It is something we build.</p>
+    <p class="vision-closing__brand">BUILVANTA — THE GENERATION THAT BUILDS.</p>
+    <p class="vision-closing__philosophy">Build Yourself. Build Value. Build Others.</p>
+    <a class="vision-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the BUILVANTA community <span aria-hidden="true">↗</span></a>
+  </div>
+</section>`;
 const pages=[
 ['index','Home','⌂','Your next chapter starts here.',''],
-['vision','Our vision','◎','A generation that builds a better future.','<p>Our vision is to raise a generation of principled, innovative, and capable people who build meaningful lives, create opportunities, and contribute to the progress of society.</p><p>We want young people to become independent thinkers, responsible leaders, creative problem-solvers, and people who use their growth to make life better for others.</p>'],
-['mission','Our mission','↗','Move from potential to purpose.','<p>BUILVANTA exists to help young people move beyond merely wishing for a better future. We want them to develop the mindset, skills, character, and confidence to build that future for themselves and contribute to the progress of others.</p><p>The world is full of people with dreams, ideas, and potential. But potential becomes powerful when it is developed, applied, and used to create something meaningful.</p><p>We believe that when people grow, create value, and help others rise, entire communities can move forward.</p>'],
-['what-we-build','What we build','⊞','Five ways we build.',[['Build Yourself','Develop your character, discipline, confidence, communication, and personal growth.'],['Build Your Mind','Learn to think critically, make informed decisions, question assumptions, and think independently.'],['Build Value','Explore entrepreneurship, financial literacy, digital skills, technology, AI, and practical problem-solving.'],['Build Together','Learn leadership, teamwork, collaboration, respect, and how to work across differences.'],['Build Others','Embrace mentorship, service, integrity, and the responsibility to help others grow.']].map(([t,p],i)=>`<section class="pillar"><span>0${i+1}</span><div><h2>${t}</h2><p>${p}</p></div></section>`).join('')],
-['who-we-are','Who we are','♧','For young people who want to become more.','<p>BUILVANTA is a youth development movement, beginning with young people aged 15–20.</p><p>We welcome young people who want to grow, discover their potential, develop useful skills, explore opportunities, and contribute positively to society.</p><p>You do not need to have everything figured out. You do not need to be wealthy, exceptionally talented, or already successful.</p><p>You only need a willingness to learn, grow, take action, and become more intentional about the person you are becoming.</p><p>BUILVANTA welcomes young people from different backgrounds, communities, and beliefs.</p>'],
-['philosophy','Our philosophy','▤','Build Yourself. Build Value. Build Others.','<p>We believe that personal success means more when it creates value beyond ourselves.</p><ul><li>Build your mind so you can think for yourself.</li><li>Build your abilities so you can solve real problems.</li><li>Build your character so your progress is grounded in integrity.</li><li>Build others so that your success becomes an opportunity for more people to grow.</li></ul><p>We are not here merely to celebrate success. We want to help develop people who understand how to create it, sustain it responsibly, and use it to make a positive difference.</p>']
+['vision','Our vision','◎','A generation that builds a better future.',visionBody],
+['mission','Our mission','↗','Move from potential to purpose.','<p>BUILVANTA exists to help young people turn potential into purposeful action. We encourage them to develop the mindset, practical skills, character, and confidence to shape their own future and contribute positively to others.</p><p>Our approach starts with personal growth and continues through learning, practice, and contribution. We want young people to explore ideas, build useful capabilities, take responsible action, and learn from the process.</p><h2>How we put the mission into practice</h2><ul><li><strong>Strengthen foundations:</strong> build self-awareness, discipline, confidence, communication, and integrity.</li><li><strong>Develop practical ability:</strong> practise critical thinking, creativity, digital and financial literacy, and problem-solving.</li><li><strong>Turn learning into action:</strong> explore ideas through small projects, purposeful choices, and an entrepreneurial mindset.</li><li><strong>Grow with others:</strong> learn to collaborate, share knowledge, and contribute to the progress of others.</li></ul><p>We believe progress is built step by step: learn, practise, create value, reflect, and help someone else move forward.</p>'],
+['what-we-build','What we build','⊞','Five ways we build.','<p>BUILVANTA is built around five connected areas of growth. Each supports the others: personal development gives direction, clear thinking and useful skills equip action, and collaboration and service extend its impact.</p>'+[['Build Yourself','Develop self-awareness, discipline, confidence, communication, and habits that help you set goals and follow through.'],['Build Your Mind','Ask thoughtful questions, assess information, consider different perspectives, and make informed decisions for yourself.'],['Build Value','Explore entrepreneurship, financial literacy, digital skills, technology, AI, and practical ways to solve real problems.'],['Build Together','Practise listening, teamwork, collaboration, and responsible leadership while working across different experiences and viewpoints.'],['Build Others','Use mentorship, service, integrity, and what you learn to encourage others and help create room for them to grow.']].map(([t,p],i)=>`<section class="pillar"><span>0${i+1}</span><div><h2>${t}</h2><p>${p}</p></div></section>`).join('')+'<p>These are not separate lanes or finish lines. They form a cycle: grow as a person, apply what you learn, make something useful, and help others progress.</p>'],
+['who-we-are','Who we are','♧','For young people who want to become more.','<p>BUILVANTA is a youth-development movement for young people, beginning with those aged 15–20. It is for learners, creators, and emerging leaders who are curious about what they can become and ready to take steady steps toward it.</p><p>You may be choosing a direction, building confidence, exploring a skill, or looking for a community to learn alongside. You do not need a polished plan or a track record. A willingness to learn, contribute, and keep going is enough to begin.</p><h2>What brings us together</h2><ul><li>We value growth and effort over appearances.</li><li>We stay curious, ask questions, and remain open to learning.</li><li>We aim to use our abilities responsibly and create value for others.</li><li>We respect different experiences and make space for people to contribute.</li></ul><p>We welcome young people from different backgrounds, communities, and beliefs. We aim to meet each person with respect, encourage positive ambition, and make room for different experiences and ideas.</p>'],
+['philosophy','Our philosophy','▤','Build Yourself. Build Value. Build Others.','<p>At BUILVANTA, building starts on the inside. Lasting progress asks us to grow our judgement and character, apply our abilities to real needs, and share the value we create.</p><h2>Three principles, one practice</h2><ul><li><strong>Build Yourself.</strong> Develop your mindset, self-awareness, abilities, and character so you can take responsibility for your own growth.</li><li><strong>Build Value.</strong> Use what you know to solve problems, create useful work, and contribute to opportunities around you.</li><li><strong>Build Others.</strong> Lead with integrity, collaborate, share what you learn, and help other people move forward.</li></ul><p>These principles are connected. Personal growth without contribution can become self-centred; service without strong foundations is difficult to sustain. We want young people to connect who they are becoming with what they create and how they treat others.</p><p>We value progress over appearance, responsibility over shortcuts, learning over assumption, and lasting contribution over recognition. The goal is not simply to talk about success, but to build it with purpose and use it well.</p>']
 ];
 for(const [id,label,icon,title,body] of pages){
-const home=id==='index';
-writeFileSync(new URL(id+'.html',import.meta.url),`<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#212121"><meta name="description" content="BUILVANTA empowers young people to think independently, develop useful skills, create value, and build a better future."><title>BUILVANTA | ${home?'The Generation That Builds':label}</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body class="${home?'home-page':'content-page'}"><a class="skip" href="#main">Skip to content</a><button class="backdrop" tabindex="-1" aria-label="Close navigation" hidden></button>
-<aside class="sidebar" id="sidebar"><div class="sidebar-brand"><a href="index.html" class="brand"><span class="brand-symbol">b.</span>BUILVANTA</a><button class="close-menu icon-button" aria-label="Close navigation">×</button></div><nav aria-label="Main navigation">${pages.map(([pid,plabel,picon])=>`<a href="${pid}.html" ${pid===id?'aria-current="page"':''}><span class="nav-icon" aria-hidden="true">${picon}</span>${plabel}</a>`).join('')}</nav><div class="sidebar-bottom"><span class="little-mark">b.</span><div><strong>The generation that builds.</strong><p>Build Yourself. Build Value. Build Others.</p></div></div></aside>
-<div class="workspace"><header class="topbar"><button class="open-menu icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button><span>${home?'BUILVANTA':label}</span><span class="topbar-note">The generation that builds.</span></header><main id="main" tabindex="-1" class="${home?'home-main':'article-main'}">${home?`<div class="welcome"><div class="welcome-symbol" aria-hidden="true">b.</div><p class="eyebrow">BUILD YOURSELF. BUILD VALUE. BUILD OTHERS.</p><h1>${title}</h1><p class="intro">A generation of builders. A place for you.</p><a class="join-button" href="${form}" target="_blank" rel="noopener noreferrer"><span>CLICK HERE TO JOIN<br class="mobile-break"> BUILVANTA COMMUNITY</span><span class="button-arrow" aria-hidden="true">↗</span></a><p class="support">Your journey to becoming a builder starts here.</p></div>`:`<article><p class="eyebrow">${label}</p><h1>${title}</h1><div class="article-copy">${body}</div><a class="article-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a></article>`}</main><footer>© <span id="year">2026</span> BUILVANTA<span class="footer-separator">·</span>The future is something we build.</footer></div></body></html>`);
+  const home=id==='index';
+  if(home) continue; // Keep the homepage untouched unless it is explicitly requested.
+  const bodyClass=id==='vision'?'content-page vision-page':'content-page';
+  const description=id==='vision'?'BUILVANTA envisions a principled, innovative generation building a better future through mindset, collaboration, leadership, and service.':'BUILVANTA empowers young people to think independently, develop useful skills, create value, and build a better future.';
+  const articleJoin=id==='vision'?'':`<a class="article-join" href="${form}" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a>`;
+  const mainContent=home?`<div class="welcome"><img class="welcome-logo" src="assets/brand/builvanta-mark.png" alt="BUILVANTA" width="72" height="72"><p class="eyebrow">BUILD YOURSELF. BUILD VALUE. BUILD OTHERS.</p><h1>${title}</h1><p class="intro">A generation of builders. A place for you.</p><a class="join-button" href="${form}" target="_blank" rel="noopener noreferrer"><span>CLICK HERE TO JOIN<br class="mobile-break"> BUILVANTA COMMUNITY</span><span class="button-arrow" aria-hidden="true">↗</span></a><p class="support">Your journey to becoming a builder starts here.</p></div>`:`<article><p class="eyebrow">${label}</p><h1>${title}</h1><div class="article-copy">${body}</div>${articleJoin}</article>`;
+  writeFileSync(new URL(id+'.html',import.meta.url),`<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#212121"><meta name="description" content="${description}"><title>BUILVANTA | ${home?'The Generation That Builds':label}</title><link rel="icon" href="assets/brand/builvanta-mark.png" type="image/png" sizes="512x512"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body class="${bodyClass}"><a class="skip" href="#main">Skip to content</a><button class="backdrop" tabindex="-1" aria-label="Close navigation" hidden></button>
+<aside class="sidebar" id="sidebar"><div class="sidebar-brand"><a href="index.html" class="brand" aria-label="BUILVANTA home"><img class="brand-image" src="assets/brand/builvanta-mark.png" alt="" width="40" height="40"></a><button class="close-menu icon-button" aria-label="Close navigation">×</button></div><nav aria-label="Main navigation">${pages.map(([pid,plabel,picon])=>`<a href="${pid}.html" ${pid===id?'aria-current="page"':''}><span class="nav-icon" aria-hidden="true">${picon}</span>${plabel}</a>`).join('')}</nav><div class="sidebar-bottom"><span class="little-mark" aria-hidden="true"><img src="assets/brand/builvanta-mark.png" alt="" width="29" height="29"></span><div><strong>The generation that builds.</strong><p>Build Yourself. Build Value. Build Others.</p></div></div></aside>
+<div class="workspace"><header class="topbar"><button class="open-menu icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button><span>${home?'BUILVANTA':label}</span><span class="topbar-note">The generation that builds.</span></header><main id="main" tabindex="-1" class="${home?'home-main':'article-main'}">${mainContent}</main><footer>© <span id="year">2026</span> BUILVANTA<span class="footer-separator">·</span>The future is something we build.</footer></div></body></html>`);
 }
