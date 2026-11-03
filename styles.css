@@ -71,3 +71,14 @@
 
 /* Preserve the full-width composition of the replacement leadership photo. */
 .vision-page .vision-stage--leadership .vision-stage__figure img{aspect-ratio:16/9}
+
+
+/* Official BUILVANTA gradient for existing primary calls to action only. */
+:root{--primary-cta-gradient:linear-gradient(105deg,#FFB800 0%,#FF6A00 25%,#F00091 52%,#8B19F5 76%,#1677FF 100%)}
+.join-button,.article-join,.vision-page .vision-join{background:var(--primary-cta-gradient);color:#FFFFFF}
+.join-button:hover,.article-join:hover,.vision-page .vision-join:hover{background:var(--primary-cta-gradient);filter:brightness(1.06)}
+.button-arrow{background:#171717;color:#FFFFFF}
+.join-button:focus-visible,.article-join:focus-visible,.vision-page .vision-join:focus-visible,.mission-page .mission-cta:focus-visible{outline:2px solid #171717;outline-offset:3px;box-shadow:0 0 0 2px #FFFFFF}
+
+.join-button:focus-visible,.article-join:focus-visible{outline-color:#FFFFFF;box-shadow:0 0 0 2px #171717}
+.vision-page .vision-join:focus-visible,.mission-page .mission-cta:focus-visible{outline-color:#171717;box-shadow:0 0 0 2px #FFFFFF}

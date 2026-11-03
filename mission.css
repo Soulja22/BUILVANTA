@@ -1,0 +1,87 @@
+/* Mission-page styling only. Keep shared and other page styles untouched. */
+.mission-page{--mission-paper:#fbfcf8;--mission-ink:#1c241f;--mission-muted:#58635d;--mission-line:#dce3d9;--mission-accent:#a4cf43;color-scheme:light;background:var(--mission-paper);color:var(--mission-ink)}
+.mission-page .workspace{background:var(--mission-paper)}
+.mission-page .topbar{color:#4c5751}
+.mission-page .topbar-note{color:#68736d}
+.mission-page footer{color:#68736d}
+.mission-page .sidebar{color:var(--text)}
+.mission-page .article-main{padding:clamp(40px,6vw,82px) clamp(22px,5.2vw,82px) clamp(58px,8vw,110px)}
+.mission-page .article-main article{width:100%;max-width:1120px;margin:0 auto}
+.mission-page .article-main .eyebrow{display:none}
+.mission-page .article-main h1{max-width:none}
+.mission-page .article-copy{margin-top:0;color:var(--mission-muted);font-size:16px;line-height:1.8}
+.mission-page .article-copy p{margin:0 0 20px}
+.mission-page .mission-overline{margin:0 0 12px;color:#788843;font-size:10px;font-weight:700;letter-spacing:.2em;line-height:1.5;text-transform:uppercase}
+.mission-page .mission-hero{margin:0 0 clamp(68px,8vw,106px)}
+.mission-page .mission-hero h1{max-width:920px;color:var(--mission-ink);font-size:clamp(42px,7vw,78px);font-weight:600;letter-spacing:-.065em;line-height:.99}
+.mission-page .mission-hero h1 span{display:block;color:#596743}
+.mission-page .mission-hero__intro{margin:22px 0 28px;color:var(--mission-muted);font-size:clamp(17px,2vw,22px);line-height:1.55}
+.mission-page .mission-hero__art{overflow:hidden;margin:0;border:1px solid #e3e8df;border-radius:20px;background:#e7edf3;box-shadow:0 16px 46px rgba(24,37,28,.08)}
+.mission-page .mission-hero__art img,.mission-page .mission-approach__art img,.mission-page .mission-milestone__art img{display:block;width:100%;height:auto}
+.mission-page .mission-statement{display:grid;grid-template-columns:minmax(180px,.72fr) minmax(0,1.28fr);column-gap:clamp(28px,6vw,86px);align-items:start;padding:34px 0 0;border-top:1px solid var(--mission-line)}
+.mission-page .mission-statement__heading h2{margin:0;color:var(--mission-ink);font-size:clamp(28px,4vw,42px);font-weight:550;letter-spacing:-.05em;line-height:1.1}
+.mission-page .mission-statement__copy p{margin:0 0 18px}
+.mission-page .mission-promise{grid-column:1/-1;margin:22px 0 0;padding:clamp(22px,3.5vw,38px);border-top:3px solid transparent;border-image:linear-gradient(90deg,#ffc400,#f0528a,#635bff) 1;background:linear-gradient(108deg,rgba(209,245,138,.18),rgba(104,201,169,.08) 55%,rgba(169,151,232,.1))}
+.mission-page .mission-promise p{max-width:900px;margin:0;color:#253128;font-size:clamp(24px,3.3vw,38px);font-weight:550;letter-spacing:-.04em;line-height:1.25}
+.mission-page .mission-approach,.mission-page .mission-milestone,.mission-page .mission-geography,.mission-page .mission-measure{margin:clamp(76px,10vw,132px) 0 0;padding-top:clamp(28px,4vw,52px);border-top:1px solid var(--mission-line)}
+.mission-page .mission-section-heading{max-width:850px;margin-bottom:30px}
+.mission-page .mission-section-heading h2{max-width:820px;margin:0 0 16px;color:var(--mission-ink);font-size:clamp(34px,5vw,58px);font-weight:560;letter-spacing:-.055em;line-height:1.07}
+.mission-page .mission-section-heading>p:not(.mission-overline){max-width:740px;margin:0;color:var(--mission-muted);font-size:16px}
+.mission-page .mission-approach__art{overflow:hidden;margin:0 0 28px;border:1px solid #e3e8df;border-radius:18px;background:#f1f4ef}
+.mission-page .mission-pillars{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.mission-page .mission-pillar{min-width:0;padding:20px 17px 22px;border:1px solid var(--mission-line);border-radius:14px;background:#fff}
+.mission-page .mission-pillar__number{display:inline-flex;align-items:center;justify-content:center;width:31px;height:31px;margin-bottom:20px;border-radius:9px;background:#f0f4e7;color:#64743c;font-size:10px;font-weight:700;letter-spacing:.08em}
+.mission-page .mission-pillar:nth-child(2) .mission-pillar__number{background:#f2ecfb;color:#7b50a8}
+.mission-page .mission-pillar:nth-child(3) .mission-pillar__number{background:#fff1df;color:#ad6b14}
+.mission-page .mission-pillar:nth-child(4) .mission-pillar__number{background:#e7f6f1;color:#348a71}
+.mission-page .mission-pillar:nth-child(5) .mission-pillar__number{background:#fce9f4;color:#ae4381}
+.mission-page .mission-pillar h3{margin:0 0 9px;color:var(--mission-ink);font-size:16px;font-weight:650;letter-spacing:-.025em;line-height:1.25}
+.mission-page .mission-pillar p{margin:0;color:var(--mission-muted);font-size:12px;line-height:1.65}
+.mission-page .mission-milestone__feature{display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);align-items:center;gap:clamp(22px,4vw,48px);overflow:hidden;padding:clamp(22px,4vw,46px);border-radius:22px;background:#202821;color:#f8fbf5}
+.mission-page .mission-milestone__stat{display:flex;flex-direction:column;align-items:flex-start}
+.mission-page .mission-milestone__label{color:#d5e0c5;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.mission-page .mission-milestone__stat strong{display:block;margin:8px 0 -3px;background:linear-gradient(105deg,#ffd22c,#ff7552,#dc61c7,#61a9ff);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:clamp(74px,11vw,138px);font-weight:750;letter-spacing:-.09em;line-height:1}
+.mission-page .mission-milestone__young{color:white;font-size:clamp(25px,3vw,36px);font-weight:600;letter-spacing:-.04em;line-height:1.1}
+.mission-page .mission-milestone__stat p{max-width:290px;margin:14px 0 0;color:#c2cec0;font-size:14px;line-height:1.6}
+.mission-page .mission-milestone__art{overflow:hidden;margin:0;border-radius:14px;background:#f8f6f0}
+.mission-page .mission-milestone__copy{max-width:870px;margin:36px auto 0}
+.mission-page .mission-milestone__copy h3{margin:28px 0 10px;color:var(--mission-ink);font-size:18px;font-weight:600}
+.mission-page .mission-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px;margin:0;padding:0;list-style:none}
+.mission-page .mission-checklist li{position:relative;padding:13px 0 13px 28px;border-top:1px solid var(--mission-line);color:var(--mission-muted);font-size:14px;line-height:1.6}
+.mission-page .mission-checklist li:before{position:absolute;top:14px;left:2px;display:grid;width:17px;height:17px;place-items:center;border-radius:50%;background:#e9f1d9;color:#607139;content:"✓";font-size:11px;font-weight:700}
+.mission-page .mission-milestone__closing{margin-top:24px!important;color:#35452d;font-size:18px;font-weight:650}
+.mission-page .mission-geography__body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 42px}
+.mission-page .mission-geography__body p{margin:0 0 18px}
+.mission-page .mission-reach{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0 28px;padding:0;list-style:none}
+.mission-page .mission-reach li{position:relative;display:flex;min-height:155px;flex-direction:column;align-items:flex-start;padding:21px;border:1px solid var(--mission-line);border-radius:15px;background:#fff}
+.mission-page .mission-reach__step{color:#788843;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.mission-page .mission-reach strong{margin:12px 0 6px;color:var(--mission-ink);font-size:24px;font-weight:650;letter-spacing:-.04em}
+.mission-page .mission-reach li>span:last-child{color:var(--mission-muted);font-size:12px;line-height:1.6}
+.mission-page .mission-geography>p{max-width:960px}
+.mission-page .mission-promise--global{margin-top:32px}
+.mission-page .mission-measure .mission-section-heading{margin-bottom:25px}
+.mission-page .mission-measures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px;margin:0 0 23px;padding:0;list-style:none}
+.mission-page .mission-measures li{position:relative;padding:14px 0 14px 26px;border-top:1px solid var(--mission-line);color:var(--mission-muted);font-size:14px;line-height:1.55}
+.mission-page .mission-measures li:before{position:absolute;top:20px;left:3px;width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#c9ed6b,#70c9ae,#aa99e5);content:""}
+.mission-page .mission-closing{margin:clamp(76px,10vw,132px) 0 0;padding:clamp(28px,5vw,60px);border-radius:22px;border-top:4px solid transparent;border-image:linear-gradient(90deg,#c9ed6b,#70c9ae,#aa99e5) 1;background:linear-gradient(118deg,rgba(209,245,138,.18),rgba(115,203,176,.08) 57%,rgba(169,151,232,.12))}
+.mission-page .mission-closing h2{max-width:830px;margin:0 0 12px;color:#202b23;font-size:clamp(36px,5.5vw,64px);font-weight:620;letter-spacing:-.06em;line-height:1.02}
+.mission-page .mission-closing__lead{margin:0 0 18px!important;color:#56634c;font-size:clamp(19px,2.4vw,25px)}
+.mission-page .mission-closing>p:not(.mission-overline){max-width:760px}
+.mission-page .mission-closing__brand{margin:28px 0 4px!important;color:#344131;font-size:12px;font-weight:700;letter-spacing:.12em}
+.mission-page .mission-closing__motto{margin:0!important;color:#56634c;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.mission-page .mission-cta{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;margin-top:25px;padding:13px 17px;border-radius:9px;background:#d1f58a;color:#20251a;font-size:13px;font-weight:700;transition:transform .2s,background .2s}
+.mission-page .mission-cta:hover{transform:translateY(-2px);background:#def9ae}
+.mission-page .mission-cta span{font-size:20px;line-height:1}
+@media(max-width:1000px){.mission-page .mission-pillars{grid-template-columns:repeat(3,minmax(0,1fr))}.mission-page .mission-pillar:nth-child(n+4){grid-column:span 1}}
+@media(max-width:1100px) and (min-width:901px){.mission-page .mission-pillars{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px) and (min-width:431px){.mission-page .mission-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.mission-page .mission-milestone__feature{grid-template-columns:1fr}}
+@media(max-width:760px){.mission-page .mission-hero h1{font-size:clamp(40px,10vw,65px)}.mission-page .mission-statement{grid-template-columns:1fr;row-gap:20px}.mission-page .mission-statement__heading h2{font-size:34px}.mission-page .mission-milestone__feature{grid-template-columns:1fr}.mission-page .mission-milestone__stat strong{font-size:clamp(84px,19vw,132px)}.mission-page .mission-milestone__art{order:2}.mission-page .mission-pillars{grid-template-columns:repeat(2,minmax(0,1fr))}.mission-page .mission-pillar{padding:17px 15px}.mission-page .mission-pillar__number{margin-bottom:14px}.mission-page .mission-geography__body{grid-template-columns:1fr;gap:0}.mission-page .mission-reach{grid-template-columns:1fr;gap:9px}.mission-page .mission-reach li{min-height:0;padding:17px}.mission-page .mission-measures{grid-template-columns:1fr}.mission-page .mission-checklist{grid-template-columns:1fr;gap:0}.mission-page .mission-closing{padding:29px 23px}}
+@media(max-width:430px){.mission-page .article-main{padding:30px 18px 58px}.mission-page .mission-hero{margin-bottom:62px}.mission-page .mission-hero h1{font-size:clamp(37px,10.6vw,48px);line-height:1.02}.mission-page .mission-hero__intro{margin:16px 0 20px;font-size:16px}.mission-page .mission-hero__art{border-radius:13px}.mission-page .mission-promise{padding:22px 19px}.mission-page .mission-section-heading h2{font-size:36px}.mission-page .mission-pillars{grid-template-columns:1fr}.mission-page .mission-pillar{padding:19px}.mission-page .mission-pillar p{font-size:13px}.mission-page .mission-milestone__feature{padding:22px 18px;border-radius:16px}.mission-page .mission-milestone__art{border-radius:10px}.mission-page .mission-geography .mission-reach strong{font-size:22px}.mission-page .mission-closing{padding:25px 19px;border-radius:16px}}
+@media(prefers-reduced-motion:reduce){.mission-page .mission-cta{transition:none}}
+
+@media(max-width:1100px) and (min-width:431px){.mission-page .mission-milestone__feature{grid-template-columns:1fr}}
+
+
+/* Global BUILVANTA primary CTA treatment for the Mission page. */
+.mission-page .mission-cta{background:var(--primary-cta-gradient);color:#FFFFFF}
+.mission-page .mission-cta:hover{background:var(--primary-cta-gradient);filter:brightness(1.06)}
