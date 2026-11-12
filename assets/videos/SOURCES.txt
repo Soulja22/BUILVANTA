@@ -1,0 +1,8 @@
+Homepage hero video source
+
+Local asset: builvanta-home-hero.mp4
+Google Drive file ID: 1fd3eQ2aKZiCwW7Dg2FSV0VEWYDbD4Zen
+Original filename: builvanta_hero_16x9_web.mp4
+Source mime type: video/mp4
+Inspected media: H.264, 1280×720, 30 fps, 10 seconds, approximately 1.07 MB
+Drive sharing permissions were not modified. The webpage uses the local asset path and does not display or link to Google Drive.
