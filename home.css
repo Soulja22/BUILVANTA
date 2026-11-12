@@ -1,6 +1,7 @@
 /* Homepage hero panel only. Do not affect the shared header, footer, sidebar or other pages. */
-.home-page .workspace{height:auto;min-height:100svh}
-.home-page .home-main{flex:0 0 auto;align-items:stretch;justify-content:center;min-height:0;padding-block:0;background:#212121}
+.home-page .workspace{height:auto;min-height:100svh;background:#FFFFFF}
+.home-page .topbar{background:#212121}
+.home-page .home-main{flex:0 0 auto;align-items:stretch;justify-content:center;min-height:0;padding-block:0;background:#FFFFFF}
 .home-page .welcome-panel{display:flex;width:min(720px,100%);align-items:center;justify-content:center;padding-block:clamp(30px,5vh,52px);padding-inline:0;background:#fff;color:#171717}
 .home-page .welcome{width:min(640px,100%);color:#171717}
 .home-page .welcome .eyebrow{margin:0 0 14px;color:#68736d;font-size:10px;font-weight:700;letter-spacing:.16em;line-height:1.5}
