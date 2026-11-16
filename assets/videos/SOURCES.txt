@@ -6,3 +6,16 @@ Original filename: builvanta_hero_16x9_web.mp4
 Source mime type: video/mp4
 Inspected media: H.264, 1280×720, 30 fps, 10 seconds, approximately 1.07 MB
 Drive sharing permissions were not modified. The webpage uses the local asset path and does not display or link to Google Drive.
+
+
+Homepage introduction video background
+
+Original Drive link: https://drive.google.com/file/d/1cybx-UhfotsSwREH9baD46nD8CO3PU3r/view?usp=drive_link
+Drive file ID: 1cybx-UhfotsSwREH9baD46nD8CO3PU3r
+Original filename: builvanta_background_1080p.mp4
+Source mime type: video/mp4; source size: 6,252,316 bytes; Drive metadata reports canDownload=true and shared=true. Sharing permissions were not changed.
+Inspected source: H.264, 1920×1080, 24 fps, 5.041667 seconds, video stream only (no audio). The clip is a short montage of young people sketching, inspecting a component, collaborating at a glass board, studying technical sketches, and displaying a small robot. Text is safest on the left/top over a subtle dark gradient; the right/center retains more of the visual footage.
+Local optimized desktop source: builvanta-intro-background-1080p.mp4 (H.264, 1920×1080, 24 fps, 5.041667 seconds, 1,958,726 bytes).
+Local optimized mobile source: builvanta-intro-background-mobile.mp4 (H.264, 1280×720, 24 fps, 5.041667 seconds, 923,793 bytes).
+Poster fallback: builvanta-intro-poster.webp (1280 px wide, extracted at 0.4 seconds, approximately 24 KB).
+The page will use only these local asset paths; the public page will not expose or link to the Drive URL.

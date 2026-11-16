@@ -1,0 +1,216 @@
+/* BUILVANTA Think Lab — homepage feature only. */
+.think-lab{--tl-ink:#171717;--tl-muted:#5b655e;--tl-faint:#5f6962;--tl-line:#e5e8e5;--tl-surface:#f7f8f6;--tl-gradient:var(--primary-cta-gradient,linear-gradient(105deg,#FFB800 0%,#FF6A00 25%,#F00091 52%,#8B19F5 76%,#1677FF 100%));width:min(1180px,100%);margin:0 auto;padding:clamp(58px,8vw,104px) clamp(20px,5.5vw,72px) clamp(76px,9vw,116px);border-top:1px solid #eceeeb;background:#FFFFFF;color:var(--tl-ink);text-align:left}
+.think-lab *{box-sizing:border-box}
+.think-lab [hidden]{display:none!important}
+.think-lab__eyebrow{display:flex;align-items:center;gap:11px;margin:0 0 24px;color:#52604c;font-size:10px;font-weight:800;letter-spacing:.16em;line-height:1.5}
+.think-lab__mark{display:grid;width:32px;height:32px;place-items:center;border-radius:10px;background:linear-gradient(rgba(23,23,23,.48),rgba(23,23,23,.48)),var(--tl-gradient);color:#fff;font-size:10px;letter-spacing:.04em;box-shadow:0 7px 18px rgba(139,25,245,.16)}
+.think-lab__eyebrow-divider{width:1px;height:17px;background:#d8dcd8}
+.think-lab__tagline{color:#5f6962;font-size:9px;letter-spacing:.15em}
+.think-lab__intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 180px;align-items:center;gap:40px}
+.think-lab__copy h2{margin:0 0 12px;color:#171717;font-size:clamp(34px,5vw,52px);font-weight:800;letter-spacing:-.065em;line-height:1}
+.think-lab__lead{margin:0 0 10px;color:#222722;font-size:clamp(20px,2.5vw,27px);font-weight:700;letter-spacing:-.035em;line-height:1.25}
+.think-lab__description{max-width:650px;margin:0;color:#58635d;font-size:15px;line-height:1.75}
+.think-lab__duration{display:flex;min-height:132px;flex-direction:column;align-items:center;justify-content:center;border:1px solid #e9ebe8;border-radius:20px;background:linear-gradient(145deg,#fff 5%,#f7f8f6 100%);box-shadow:0 12px 32px rgba(23,23,23,.045)}
+.think-lab__duration-number{color:#171717;font-size:35px;font-weight:800;letter-spacing:-.07em;line-height:1}
+.think-lab__duration-label{margin-top:5px;color:#58635d;font-size:9px;font-weight:800;letter-spacing:.18em}
+.think-lab__duration-note{margin-top:13px;padding-top:10px;border-top:1px solid #e4e7e3;color:#5f6962;font-size:8px;font-weight:700;letter-spacing:.11em;text-align:center}
+.think-lab__launch-row{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:27px}
+.think-lab__button{display:inline-flex;min-height:54px;align-items:center;justify-content:space-between;gap:24px;padding:9px 10px 9px 21px;border:0;border-radius:13px;background:var(--tl-gradient);color:#fff;font:inherit;font-size:11px;font-weight:800;letter-spacing:.045em;text-align:left;cursor:pointer;box-shadow:0 10px 25px rgba(111,48,214,.17);transition:transform .2s ease,box-shadow .2s ease}
+.think-lab__button>span:first-child{padding:6px 8px;border-radius:7px;background:rgba(23,23,23,.48)}
+.think-lab__button:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(111,48,214,.22)}
+.think-lab__button:active{transform:translateY(0)}
+.think-lab__button:focus-visible,.think-lab-secondary:focus-visible,.think-lab-game__close:focus-visible,.think-lab select:focus-visible,.think-lab-option input:focus-visible+.think-lab-option__radio{outline:3px solid #171717;outline-offset:3px}
+.think-lab__button-arrow{display:grid;width:34px;height:34px;flex:0 0 34px;place-items:center;border-radius:50%;background:#171717;color:#fff;font-size:21px;font-weight:500;line-height:1}
+.think-lab__privacy{margin:0;color:#5f6962;font-size:11px;line-height:1.5}
+.think-lab-game{margin-top:38px;animation:think-lab-reveal .38s ease both}
+.think-lab-game__frame{overflow:hidden;border:1px solid #e6e9e5;border-radius:24px;background:#fff;box-shadow:0 22px 58px rgba(23,23,23,.085)}
+.think-lab-game__topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px clamp(22px,4vw,42px);border-bottom:1px solid #eceeeb;background:linear-gradient(90deg,#fff,#fbfbfa)}
+.think-lab-game__overline{margin:0 0 5px;color:#606b63;font-size:9px;font-weight:800;letter-spacing:.18em}
+.think-lab-game__topbar h3{margin:0;color:#171717;font-size:20px;font-weight:750;letter-spacing:-.035em}
+.think-lab-game__close{display:inline-flex;min-height:40px;align-items:center;gap:9px;padding:8px 12px;border:1px solid #e4e7e3;border-radius:10px;background:#fff;color:#3f4842;font:inherit;font-size:12px;font-weight:700;cursor:pointer;transition:background .18s ease,border-color .18s ease}
+.think-lab-game__close:hover{border-color:#cbd0ca;background:#f7f8f6}
+.think-lab-game__close span{font-size:20px;line-height:1}
+.think-lab-view{padding:clamp(22px,4vw,40px)}
+.think-lab-game__intro{margin:0 0 23px;color:#5b655e;font-size:14px;line-height:1.65}
+.think-lab-settings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.think-lab-setting{display:flex;min-width:0;min-height:132px;flex-direction:column;justify-content:center;gap:10px;padding:18px;border:1px solid #e5e8e5;border-radius:16px;background:#fafbf9;color:#171717}
+.think-lab-setting--daily{border-top:3px solid #ff8b00}
+.think-lab-setting__label{color:#5f6962;font-size:8px;font-weight:800;letter-spacing:.14em;line-height:1.4}
+.think-lab-setting--daily strong{font-size:16px;line-height:1.25;letter-spacing:-.02em}
+.think-lab-setting__detail{color:#5f6962;font-size:10px;line-height:1.4}
+.think-lab-setting select{width:100%;min-height:42px;padding:8px 35px 8px 11px;border:1px solid #d8ddd8;border-radius:9px;background:#fff;color:#171717;font:inherit;font-size:14px;font-weight:700}
+.think-lab-timer-toggle{display:flex;align-items:center;gap:12px;cursor:pointer}
+.think-lab-timer-toggle input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}
+.think-lab-timer-toggle__switch{position:relative;width:40px;height:23px;flex:0 0 40px;border-radius:99px;background:#cbd0ca;transition:background .18s ease}
+.think-lab-timer-toggle__switch::after{position:absolute;top:3px;left:3px;width:17px;height:17px;border-radius:50%;background:white;box-shadow:0 1px 4px #0002;content:"";transition:transform .18s ease}
+.think-lab-timer-toggle input:checked+.think-lab-timer-toggle__switch{background:#8b19f5}
+.think-lab-timer-toggle input:checked+.think-lab-timer-toggle__switch::after{transform:translateX(17px)}
+.think-lab-timer-toggle input:focus-visible+.think-lab-timer-toggle__switch{outline:3px solid #171717;outline-offset:3px}
+.think-lab-timer-toggle strong,.think-lab-timer-toggle small{display:block}
+.think-lab-timer-toggle strong{font-size:12px;line-height:1.4}
+.think-lab-timer-toggle small{margin-top:3px;color:#5f6962;font-size:10px}
+.think-lab-setup-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:23px}
+.think-lab-personal-best{margin:0;color:#677169;font-size:11px}
+.think-lab-personal-best strong{color:#2f3932}
+.think-lab-game__footnote{margin:13px 4px 0;color:#5f6962;font-size:10px;line-height:1.5}
+.think-lab-round-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.think-lab-round-meta>div:first-child{display:flex;flex-wrap:wrap;gap:8px}
+.think-lab-chip{display:inline-flex;min-height:29px;align-items:center;padding:6px 10px;border-radius:99px;background:#f1e9ff;color:#6320aa;font-size:9px;font-weight:800;letter-spacing:.04em}
+.think-lab-chip--soft{background:#f2f4f1;color:#4d5a50}
+.think-lab-round-count{color:#5f6962;font-size:9px;font-weight:800;letter-spacing:.11em}
+.think-lab-timer{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:17px;margin:0 0 20px;padding:13px 16px;border:1px solid #ebe8f2;border-radius:13px;background:#fcfbff}
+.think-lab-timer__readout{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.think-lab-timer__readout span{color:#6f6976;font-size:8px;font-weight:800;letter-spacing:.1em}
+.think-lab-timer__readout strong{color:#342446;font-size:17px;font-variant-numeric:tabular-nums}
+.think-lab-timer__track{height:7px;overflow:hidden;border-radius:99px;background:#eae5f0}
+.think-lab-timer__track span{display:block;width:100%;height:100%;border-radius:inherit;background:var(--tl-gradient);transition:width .3s linear,background .2s ease}
+.think-lab-timer.is-low .think-lab-timer__track span{background:#d97706}
+.think-lab-question{padding:clamp(20px,3.4vw,34px);border:1px solid #eaede9;border-radius:19px;background:linear-gradient(145deg,#fff 15%,#fafbf9)}
+.think-lab-question__kicker{margin:0 0 11px;color:#5f6962;font-size:8px;font-weight:800;letter-spacing:.16em}
+.think-lab-question h4{max-width:760px;margin:0 0 18px;color:#171717;font-size:clamp(19px,2.8vw,26px);font-weight:750;letter-spacing:-.035em;line-height:1.35}
+.think-lab-question__visual{width:max-content;max-width:100%;margin:0 0 20px;padding:13px 16px;overflow:auto;border:1px solid #e6e9e5;border-radius:11px;background:#f4f6f3;color:#27302a;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:clamp(14px,2vw,17px);font-weight:650;line-height:1.8;white-space:pre}
+.think-lab-options{min-width:0;margin:0;padding:0;border:0}
+.think-lab-options legend{margin:0 0 10px;color:#59635c;font-size:11px;font-weight:700}
+.think-lab-options__list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.think-lab-option{position:relative;display:flex;min-width:0;min-height:51px;align-items:center;gap:11px;padding:10px 13px;border:1px solid #e2e6e1;border-radius:11px;background:#fff;color:#29312b;font-size:12px;line-height:1.45;cursor:pointer;transition:border-color .16s ease,background .16s ease,transform .16s ease}
+.think-lab-option:hover{transform:translateY(-1px);border-color:#bfc6bf;background:#fbfcfa}
+.think-lab-option input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}
+.think-lab-option__radio{display:grid;width:17px;height:17px;flex:0 0 17px;place-items:center;border:1.5px solid #aeb6ae;border-radius:50%;background:#fff}
+.think-lab-option__letter{color:#5f6962;font-size:9px;font-weight:800}
+.think-lab-option__text{min-width:0;overflow-wrap:anywhere}
+.think-lab-option input:checked~.think-lab-option__radio{border-color:#8b19f5}
+.think-lab-option input:checked~.think-lab-option__radio::after{width:7px;height:7px;border-radius:50%;background:#8b19f5;content:""}
+.think-lab-option:has(input:checked){border-color:#9a61d1;background:#fbf8ff}
+.think-lab-option:has(input:disabled){cursor:default}
+.think-lab-option input:disabled~.think-lab-option__text,.think-lab-option input:disabled~.think-lab-option__letter{opacity:.78}
+.think-lab-form-message{min-height:18px;margin:9px 0 5px;color:#a43b25;font-size:11px}
+.think-lab-results{animation:think-lab-reveal .34s ease both}
+.think-lab-feedback{padding:clamp(22px,4vw,38px);border:1px solid #e5e9e4;border-radius:19px;background:linear-gradient(145deg,#fff 0%,#f8faf7 100%)}
+.think-lab-feedback.is-correct{border-color:#b8ddc4;background:linear-gradient(145deg,#fff 0%,#f1faf3 100%)}
+.think-lab-feedback.is-incorrect{border-color:#f0d1c7;background:linear-gradient(145deg,#fff 0%,#fff8f5 100%)}
+.think-lab-feedback__eyebrow{margin:0 0 7px;color:#5f6962;font-size:9px;font-weight:800;letter-spacing:.16em}
+.think-lab-feedback.is-correct .think-lab-feedback__eyebrow{color:#18733a}
+.think-lab-feedback.is-incorrect .think-lab-feedback__eyebrow{color:#a3422d}
+.think-lab-feedback h4{margin:0 0 14px;color:#171717;font-size:clamp(22px,3.5vw,32px);font-weight:800;letter-spacing:-.05em;line-height:1.15}
+.think-lab-feedback__answer{margin:0 0 9px;color:#4c574e;font-size:13px;line-height:1.6}
+.think-lab-feedback__answer strong{color:#171717}
+.think-lab-feedback__explanation{max-width:780px;margin:0;color:#515d54;font-size:13px;line-height:1.75}
+.think-lab-score-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:23px}
+.think-lab-score-row>div{display:flex;min-height:70px;flex-direction:column;justify-content:center;gap:5px;padding:12px 14px;border:1px solid #e5e8e4;border-radius:12px;background:#fff}
+.think-lab-score-row span{color:#5f6962;font-size:8px;font-weight:800;letter-spacing:.1em}
+.think-lab-score-row strong{color:#171717;font-size:20px;font-weight:800;line-height:1}
+.think-lab-achievement{margin:13px 0 0;color:#626d65;font-size:11px;font-weight:700}
+.think-lab-result-actions{display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin-top:20px}
+.think-lab-secondary{min-height:44px;padding:9px 12px;border:0;border-radius:9px;background:transparent;color:#525e55;font:inherit;font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.think-lab-secondary:hover{color:#171717}
+@keyframes think-lab-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.think-lab{padding:58px 22px 76px}.think-lab__intro-grid{grid-template-columns:minmax(0,1fr) 118px;gap:18px}.think-lab__duration{min-height:112px;border-radius:16px}.think-lab__duration-number{font-size:29px}.think-lab__duration-note{font-size:7px}.think-lab__description{font-size:14px}.think-lab__launch-row{align-items:flex-start;flex-direction:column;gap:12px}.think-lab-game{margin-top:28px}.think-lab-game__frame{border-radius:19px}.think-lab-game__topbar{padding:20px 19px}.think-lab-view{padding:20px 18px}.think-lab-settings{grid-template-columns:1fr}.think-lab-setting{min-height:100px}.think-lab-setting--timer{min-height:94px}.think-lab-setup-footer{align-items:flex-start;flex-direction:column}.think-lab-options__list{grid-template-columns:1fr}.think-lab-score-row{grid-template-columns:1fr 1fr}.think-lab-score-row>div:last-child{grid-column:1/-1}.think-lab-timer{grid-template-columns:1fr;gap:7px}.think-lab-timer__readout{justify-content:flex-start;gap:13px}}
+@media(max-width:430px){.think-lab{padding-inline:17px}.think-lab__intro-grid{grid-template-columns:1fr;gap:20px}.think-lab__duration{min-height:86px;align-items:flex-start;padding:13px 16px}.think-lab__duration-number{font-size:26px}.think-lab__duration-label{margin-top:3px}.think-lab__duration-note{margin-top:8px;padding-top:7px}.think-lab__eyebrow{flex-wrap:wrap;gap:8px;font-size:9px}.think-lab__tagline{font-size:8px}.think-lab__button{width:100%;max-width:380px}.think-lab-game__close{padding-inline:9px;font-size:11px}.think-lab-game__topbar h3{font-size:18px}.think-lab-round-meta{align-items:flex-start;flex-direction:column}.think-lab-result-actions{align-items:stretch;flex-direction:column}.think-lab-secondary{text-align:center}}
+@media(prefers-reduced-motion:reduce){.think-lab-game,.think-lab-results{animation:none}.think-lab__button,.think-lab-option,.think-lab-timer__track span,.think-lab-timer-toggle__switch,.think-lab-timer-toggle__switch::after{transition:none}}
+
+
+/* Midnight innovation-lab treatment — homepage Think Lab section only. */
+.think-lab{
+  --tl-ink:#f4f6fc;
+  --tl-muted:#c4cede;
+  --tl-faint:#aebad0;
+  --tl-line:rgba(222,231,255,.15);
+  --tl-surface:#172137;
+  position:relative;
+  isolation:isolate;
+  border-top:1px solid rgba(218,228,255,.16);
+  background:
+    radial-gradient(ellipse at 13% 9%,rgba(240,0,145,.17),transparent 39%),
+    radial-gradient(ellipse at 89% 27%,rgba(22,119,255,.20),transparent 43%),
+    radial-gradient(ellipse at 58% 3%,rgba(255,184,0,.09),transparent 34%),
+    radial-gradient(ellipse at 76% 72%,rgba(255,106,0,.10),transparent 39%),
+    radial-gradient(ellipse at 52% 100%,rgba(139,25,245,.14),transparent 47%),
+    linear-gradient(135deg,#090d19 0%,#10152a 52%,#0b1221 100%);
+  color:var(--tl-ink);
+}
+.think-lab::before{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background-image:
+    radial-gradient(circle at 12px 12px,rgba(206,215,255,.72) 1.2px,transparent 1.9px),
+    linear-gradient(31deg,transparent 49.55%,rgba(188,201,242,.24) 50%,transparent 50.45%),
+    linear-gradient(149deg,transparent 49.6%,rgba(188,201,242,.18) 50%,transparent 50.4%);
+  background-size:84px 84px,168px 150px,196px 176px;
+  content:"";
+  opacity:.16;
+  pointer-events:none;
+  mask-image:linear-gradient(110deg,#000 0%,transparent 92%);
+}
+.think-lab>*{position:relative;z-index:1}
+.think-lab__eyebrow{color:#d7deeb}
+.think-lab__tagline{color:#bdc8dc}
+.think-lab__eyebrow-divider{background:rgba(224,232,248,.28)}
+.think-lab__copy h2{color:#f7f8fc}
+.think-lab__lead{color:#e9edf6}
+.think-lab__description{color:#c1cad9}
+.think-lab__duration{border-color:rgba(222,231,255,.14);background:linear-gradient(145deg,rgba(31,40,65,.94),rgba(19,27,46,.96));box-shadow:0 16px 40px rgba(0,0,0,.2)}
+.think-lab__duration-number{color:#f7f8fc}
+.think-lab__duration-label{color:#c5cede}
+.think-lab__duration-note{border-color:rgba(222,231,255,.14);color:#afbad0}
+.think-lab__privacy{color:#bac5d7}
+.think-lab-game__frame{border-color:rgba(220,231,255,.16);background:linear-gradient(155deg,#141d31,#11192b);box-shadow:0 24px 64px rgba(0,0,0,.32)}
+.think-lab-game__topbar{border-color:rgba(220,231,255,.12);background:linear-gradient(100deg,rgba(30,40,64,.96),rgba(22,31,51,.96))}
+.think-lab-game__overline{color:#b7c3d7}
+.think-lab-game__topbar h3{color:#f4f6fc}
+.think-lab-game__close{border-color:rgba(222,231,255,.17);background:#202b43;color:#eef2fa}
+.think-lab-game__close:hover{border-color:rgba(222,231,255,.34);background:#293650}
+.think-lab-game__intro{color:#c1cad9}
+.think-lab-setting{border-color:rgba(222,231,255,.14);background:linear-gradient(145deg,#1b2740,#172137);color:#f0f3fa}
+.think-lab-setting--daily{border-top-color:#ff8b00}
+.think-lab-setting__label,.think-lab-setting__detail{color:#b5c1d5}
+.think-lab-setting select{border-color:rgba(222,231,255,.2);background:#10182a;color:#f5f7fc;color-scheme:dark}
+.think-lab-setting select option{background:#10182a;color:#f5f7fc}
+.think-lab-timer-toggle__switch{background:#53617b}
+.think-lab-personal-best{color:#bdc8da}
+.think-lab-personal-best strong{color:#f4f6fc}
+.think-lab-game__footnote{color:#aab7cc}
+.think-lab-chip{background:rgba(139,25,245,.22);color:#e3d2ff}
+.think-lab-chip--soft{background:rgba(226,234,250,.09);color:#d6deeb}
+.think-lab-round-count{color:#b2bfd4}
+.think-lab-timer{border-color:rgba(178,150,255,.19);background:linear-gradient(110deg,#1b2038,#171f35)}
+.think-lab-timer__readout span{color:#c1c9db}
+.think-lab-timer__readout strong{color:#fff}
+.think-lab-timer__track{background:#31304b}
+.think-lab-question{border-color:rgba(222,231,255,.15);background:linear-gradient(145deg,#1b2740 0%,#161f33 100%)}
+.think-lab-question__kicker{color:#bdc8db}
+.think-lab-question h4{color:#f5f7fc}
+.think-lab-question__visual{border-color:rgba(222,231,255,.15);background:#0d1424;color:#e8edf8}
+.think-lab-options legend{color:#c4cede}
+.think-lab-option{border-color:rgba(222,231,255,.16);background:#202b43;color:#ecf0f8}
+.think-lab-option:hover{border-color:rgba(191,167,255,.62);background:#26334f}
+.think-lab-option__radio{border-color:#9aa8be;background:#121b2e}
+.think-lab-option__letter{color:#b9c5d9}
+.think-lab-option input:checked~.think-lab-option__radio{border-color:#cba6ff}
+.think-lab-option input:checked~.think-lab-option__radio::after{background:#cba6ff}
+.think-lab-option:has(input:checked){border-color:#b78ce9;background:#282441}
+.think-lab-form-message{color:#ffb8a8}
+.think-lab-feedback{border-color:rgba(222,231,255,.15);background:linear-gradient(145deg,#1b2740 0%,#161f33 100%)}
+.think-lab-feedback.is-correct{border-color:rgba(95,207,130,.4);background:linear-gradient(145deg,#172f2d 0%,#16283a 100%)}
+.think-lab-feedback.is-incorrect{border-color:rgba(255,147,117,.34);background:linear-gradient(145deg,#30202b 0%,#211e31 100%)}
+.think-lab-feedback__eyebrow{color:#c3cede}
+.think-lab-feedback.is-correct .think-lab-feedback__eyebrow{color:#92e5aa}
+.think-lab-feedback.is-incorrect .think-lab-feedback__eyebrow{color:#ffb6a2}
+.think-lab-feedback h4{color:#f7f8fc}
+.think-lab-feedback__answer{color:#d0d8e6}
+.think-lab-feedback__answer strong{color:#fff}
+.think-lab-feedback__explanation{color:#c5cede}
+.think-lab-score-row>div{border-color:rgba(222,231,255,.14);background:#202b43}
+.think-lab-score-row span{color:#b9c5d8}
+.think-lab-score-row strong{color:#f7f8fc}
+.think-lab-achievement{color:#c0cadd}
+.think-lab-secondary{color:#cbd4e3}
+.think-lab-secondary:hover{color:#fff}
+.think-lab__button--community{text-decoration:none}
+.think-lab__button:focus-visible,.think-lab-secondary:focus-visible,.think-lab-game__close:focus-visible,.think-lab select:focus-visible,.think-lab-option input:focus-visible+.think-lab-option__radio,.think-lab-timer-toggle input:focus-visible+.think-lab-timer-toggle__switch{outline:3px solid #f4f6fc;outline-offset:3px;box-shadow:0 0 0 2px #10182a}
+
+@media(min-width:701px) and (max-width:900px){
+  .think-lab__intro-grid{grid-template-columns:minmax(0,1fr) 150px;gap:24px}
+  .think-lab-settings{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .think-lab-setting--daily{grid-column:1/-1}
+}
