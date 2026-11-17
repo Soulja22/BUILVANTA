@@ -1,0 +1,12 @@
+BUILVANTA homepage story images — source provenance
+
+All five source images were supplied by the user in Google Drive folder 1rJ5H4szil3SfOks4_YFbXsag5-V0nhKF.
+Drive sharing permissions were not changed. Original downloads remain in the user's working Downloads folder; the website uses local WebP copies under assets/images/home-story/.
+
+01_potential_before_the_world_knew_their_name.jpg — Drive file 1wZE5UL70gBSVhme10JtbQG2EWUey0VOT
+02_the_decision_building_himself.jpg — Drive file 1Kt2q_xuKXKDWu0acl1rwZi-TIzl81PV9
+03_building_value_work_failure_retry.jpg — Drive file 1SXpsP0rezZP-785_E3LFn1yXQ1RnqmqO
+04_community_building_together.jpg — Drive file 1ea-8E3nfJW6vPAANoqxGTzs9c_VQsXIM
+05_standing_firm_impact.jpg — Drive file 1aRG52o7OKcV9YtKDrc-EZMD-ot5ws1DI
+
+Each local WebP preserves the full 2560×1440 source frame and 16:9 aspect ratio.

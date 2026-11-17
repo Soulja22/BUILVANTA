@@ -1,0 +1,8 @@
+BUILVANTA Instagram header icon
+
+Active asset: instagram-glyph-gradient.webp
+Source: Meta Instagram Brand Resource Center, official downloadable brand asset pack (2023), “01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png”. The official 5000×5000 transparent glyph is resized without cropping to a 128×128 lossless WebP for lightweight display.
+Brand resource page: https://www.meta.com/brand/resources/instagram/instagram-brand/
+Usage: official multicolour Instagram glyph in the homepage top bar, linked to https://www.instagram.com/builvanta/.
+
+The initially used white glyph was replaced by the official gradient glyph at the user's request; it is no longer used by the site.

@@ -82,3 +82,51 @@
 
 .join-button:focus-visible,.article-join:focus-visible{outline-color:#FFFFFF;box-shadow:0 0 0 2px #171717}
 .vision-page .vision-join:focus-visible,.mission-page .mission-cta:focus-visible{outline-color:#171717;box-shadow:0 0 0 2px #FFFFFF}
+
+/* Shared footer contact links: brand information left, contacts aligned to the bottom-right. */
+.site-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px 18px}
+.site-footer__brandline{justify-self:start;white-space:nowrap}
+.site-footer__links{display:inline-flex;align-items:center;justify-self:end;gap:10px}
+.site-footer__instagram{display:inline-flex;flex:0 0 44px;width:44px;height:44px;align-items:center;justify-content:center;border-radius:10px;transition:background-color .18s ease,transform .18s ease}
+.site-footer__instagram img{display:block;width:20px;height:20px}
+.site-footer__instagram:hover{transform:translateY(-1px);background:rgba(127,127,127,.12)}
+.site-footer__email{display:inline-flex;min-height:44px;align-items:center;padding:0 4px;color:inherit;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}
+.site-footer a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.vision-page .site-footer a:focus-visible,.mission-page .site-footer a:focus-visible,.what-build-page .site-footer a:focus-visible,.who-we-are-page .site-footer a:focus-visible,.philosophy-page .site-footer a:focus-visible{outline-color:#1c241f;box-shadow:0 0 0 2px #fff}
+@media(max-width:540px){.site-footer{grid-template-columns:minmax(0,1fr);row-gap:2px}.site-footer__brandline{justify-self:center;text-align:center;white-space:normal}.site-footer__links{justify-self:end}}
+@media(max-width:360px){.site-footer{padding-inline:12px}}
+@media(prefers-reduced-motion:reduce){.site-footer__instagram{transition:none}.site-footer__instagram:hover{transform:none}}
+
+
+/* Brand shell: complementary violet/blue navigation, signature-gradient top bar, and a minimal contact footer. */
+:root{
+  --brand-sidebar-gradient:radial-gradient(ellipse at 12% 0%,rgba(240,0,145,.15),transparent 42%),radial-gradient(ellipse at 100% 100%,rgba(22,119,255,.15),transparent 42%),linear-gradient(180deg,#25142f 0%,#1a172d 54%,#101a30 100%);
+  --brand-topbar-gradient:linear-gradient(rgba(23,23,23,.58),rgba(23,23,23,.58)),var(--primary-cta-gradient);
+  --brand-footer-gradient:linear-gradient(105deg,#1b142b 0%,#111a31 100%);
+}
+.sidebar{background:var(--brand-sidebar-gradient);border-right:1px solid rgba(222,216,245,.13)}
+.sidebar nav a{color:#e1ddeb}
+.sidebar nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.sidebar nav a[aria-current]{background:linear-gradient(100deg,rgba(240,0,145,.18),rgba(139,25,245,.22),rgba(22,119,255,.17));box-shadow:inset 3px 0 0 #FF6A00;color:#fff}
+.sidebar-bottom{border-top-color:rgba(222,216,245,.16)}
+.sidebar-bottom p{color:#b5afc3}
+body .workspace>.topbar{background:var(--brand-topbar-gradient);border-bottom:1px solid rgba(255,255,255,.2);color:#fff}
+body .workspace>.topbar .topbar-note{color:rgba(255,255,255,.86)}
+body .workspace>.topbar .icon-button{color:#fff}
+body .workspace>.topbar .icon-button:hover{background:rgba(16,12,27,.28)}
+body .workspace>.topbar .topbar-instagram{display:grid;flex:0 0 42px;width:42px;height:42px;place-items:center;margin-left:4px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(13,12,24,.28);transition:background .18s ease,transform .18s ease}
+body .workspace>.topbar .topbar-instagram img{display:block;width:22px;height:22px}
+body .workspace>.topbar .topbar-instagram:hover{transform:translateY(-1px);background:rgba(13,12,24,.48)}
+body .workspace>.topbar a:focus-visible{outline:2px solid #fff;outline-offset:3px;box-shadow:0 0 0 2px #171717}
+body .workspace>.site-footer{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px 20px;min-height:76px;padding:17px clamp(18px,3vw,34px) 15px;background:var(--brand-footer-gradient);color:#f7f5fb;text-align:left}
+body .workspace>.site-footer::before{position:absolute;inset:0 0 auto;height:2px;background:var(--primary-cta-gradient);content:""}
+body .workspace>.site-footer .site-footer__brandline{justify-self:start;color:rgba(255,255,255,.82);font-size:11px;font-weight:600;letter-spacing:.025em;white-space:nowrap}
+body .workspace>.site-footer .site-footer__links{display:inline-flex;align-items:center;justify-self:end;gap:12px;margin:0;font-style:normal}
+body .workspace>.site-footer .site-footer__email{display:inline-flex;min-height:44px;align-items:center;padding:0 5px;border-bottom:1px solid rgba(255,255,255,.45);color:#fff;font-size:12px;font-weight:600;text-decoration:none;text-underline-offset:4px;transition:border-color .18s ease,color .18s ease}
+body .workspace>.site-footer .site-footer__email:hover{border-color:#FFB800;color:#fff}
+body .workspace>.site-footer .site-footer__instagram{display:inline-grid;flex:0 0 44px;width:44px;height:44px;place-items:center;border:1px solid rgba(255,255,255,.13);border-radius:50%;background:rgba(255,255,255,.07);transition:background .18s ease,transform .18s ease}
+body .workspace>.site-footer .site-footer__instagram img{display:block;width:21px;height:21px}
+body .workspace>.site-footer .site-footer__instagram:hover{transform:translateY(-1px);background:rgba(255,255,255,.14)}
+body.content-page .workspace>.site-footer a:focus-visible{outline:2px solid #fff;outline-offset:3px;box-shadow:0 0 0 2px #4c2284}
+@media(max-width:540px){body .workspace>.site-footer{grid-template-columns:minmax(0,1fr);gap:4px;padding:13px 18px 14px}body .workspace>.site-footer .site-footer__brandline{justify-self:start;text-align:left}body .workspace>.site-footer .site-footer__links{display:grid;width:100%;grid-template-columns:minmax(0,1fr) auto;justify-self:stretch;gap:8px}body .workspace>.site-footer .site-footer__email{justify-self:start}body .workspace>.site-footer .site-footer__instagram{justify-self:end}}
+@media(prefers-reduced-motion:reduce){body .workspace>.topbar .topbar-instagram,body .workspace>.site-footer .site-footer__email,body .workspace>.site-footer .site-footer__instagram{transition:none}body .workspace>.topbar .topbar-instagram:hover,body .workspace>.site-footer .site-footer__instagram:hover{transform:none}}

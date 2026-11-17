@@ -1,110 +1,151 @@
 <section class="think-lab" id="think-lab" aria-labelledby="think-lab-title">
-  <div class="think-lab__intro">
-    <p class="think-lab__eyebrow"><span class="think-lab__mark" aria-hidden="true">TL</span><span>BUILVANTA THINK LAB</span><span class="think-lab__eyebrow-divider" aria-hidden="true"></span><span class="think-lab__tagline">Think. Solve. Grow.</span></p>
-    <div class="think-lab__intro-grid">
-      <div class="think-lab__copy">
-        <h2 id="think-lab-title">THINK LAB</h2>
-        <p class="think-lab__lead">Give your mind a little challenge.</p>
-        <p class="think-lab__description">Test your thinking, discover new ways to solve problems and have fun while learning.</p>
-      </div>
-      <div class="think-lab__duration" aria-label="One short puzzle, approximately 30 to 60 seconds">
-        <span class="think-lab__duration-number">30–60</span>
-        <span class="think-lab__duration-label">SECONDS</span>
-        <span class="think-lab__duration-note">ONE PUZZLE PER ROUND</span>
-      </div>
+  <header class="think-lab-hero">
+    <div class="think-lab-hero__copy">
+      <p class="think-lab__eyebrow"><span class="think-lab__mark" aria-hidden="true">TL</span><span>BUILVANTA CURIOSITY LAB</span><span class="think-lab__eyebrow-divider" aria-hidden="true"></span><span class="think-lab__tagline">Think. Explore. Grow.</span></p>
+      <h1 id="think-lab-title">Think Lab<span class="think-lab-hero__period">.</span></h1>
+      <p class="think-lab-hero__lead">Curiosity has no classroom.</p>
+      <p class="think-lab-hero__description">Choose a subject, follow a question, and discover something you can carry into the world. From language and art to science, nature, technology and the big questions shaping our world—there is more than one way to explore.</p>
+      <div class="think-lab-hero__facts" aria-label="Think Lab collection size"><span><strong id="think-lab-topic-count">14</strong> topics</span><span aria-hidden="true">·</span><span><strong id="think-lab-question-count">140</strong> curated questions</span><span aria-hidden="true">·</span><span>No account needed</span></div>
     </div>
-    <div class="think-lab__launch-row">
-      <button class="think-lab__button think-lab__button--launch" id="think-lab-open" type="button" aria-controls="think-lab-game" aria-expanded="false">
-        <span>PLAY TODAY'S CHALLENGE</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span>
-      </button>
-      <p class="think-lab__privacy">No account. No personal information. Just one good question.</p>
+    <aside class="think-lab-hero-card" aria-label="A note about learning in Think Lab">
+      <span class="think-lab-hero-card__orbit" aria-hidden="true"><span></span><span></span><span></span></span>
+      <p class="think-lab-hero-card__overline">A SPACE TO WANDER</p>
+      <p class="think-lab-hero-card__line">Pick a path.<br>Stay curious.</p>
+      <p class="think-lab-hero-card__note">Every answer opens a door to the reasoning behind it.</p>
+      <a class="think-lab-hero-card__link" href="#think-lab-explorer">Choose a topic <span aria-hidden="true">↓</span></a>
+    </aside>
+  </header>
+
+  <div class="think-lab-workspace" id="think-lab-explorer">
+    <div class="think-lab-workspace__heading">
+      <div><p class="think-lab-section-label">YOUR CURIOSITY, YOUR ROUTE</p><h2>Where shall we begin?</h2></div>
+      <p>There are no grades here. Take your time, try an answer, and learn from every explanation.</p>
     </div>
-  </div>
 
-  <section class="think-lab-game" id="think-lab-game" aria-labelledby="think-lab-game-heading" hidden>
-    <div class="think-lab-game__frame">
-      <header class="think-lab-game__topbar">
-        <div><p class="think-lab-game__overline">TODAY'S THINKING ROUND</p><h3 id="think-lab-game-heading" tabindex="-1">Set your pace.</h3></div>
-        <button class="think-lab-game__close" id="think-lab-close" type="button" aria-label="Close Think Lab and return to homepage">Close <span aria-hidden="true">×</span></button>
-      </header>
-
-      <div class="think-lab-view" id="think-lab-setup">
-        <p class="think-lab-game__intro">One curated challenge at a time. Choose your difficulty and decide whether to use the optional timer.</p>
-        <div class="think-lab-settings">
-          <div class="think-lab-setting think-lab-setting--daily">
-            <span class="think-lab-setting__label">TODAY'S ROTATING CATEGORY</span>
-            <strong id="think-lab-category">Pattern Recognition</strong>
-            <span class="think-lab-setting__detail" id="think-lab-date"></span>
-          </div>
-          <label class="think-lab-setting" for="think-lab-difficulty">
-            <span class="think-lab-setting__label">DIFFICULTY</span>
-            <select id="think-lab-difficulty" name="difficulty">
-              <option value="Easy">Easy</option>
-              <option value="Medium" selected>Medium</option>
-              <option value="Hard">Hard</option>
-            </select>
-            <span class="think-lab-setting__detail">Medium is the default.</span>
+    <section class="think-lab-view think-lab-setup" id="think-lab-setup" aria-labelledby="think-lab-setup-title">
+      <div class="think-lab-setup__heading"><span class="think-lab-step" aria-hidden="true">01</span><div><h3 id="think-lab-setup-title">Choose what you want to explore</h3><p>Pick a topic or let the Lab surprise you.</p></div></div>
+      <div class="think-lab-settings">
+        <label class="think-lab-setting think-lab-setting--topic" for="think-lab-category">
+          <span class="think-lab-setting__label">QUESTION TYPE</span>
+          <select id="think-lab-category" name="category">
+            <option value="Random Mix" selected>Surprise me — Random Mix</option>
+            <optgroup label="Explore a subject">
+              <option value="English &amp; Language">English &amp; Language</option>
+              <option value="General Studies">General Studies</option>
+              <option value="World &amp; Foreign Affairs">World &amp; Foreign Affairs</option>
+              <option value="Weather &amp; Climate">Weather &amp; Climate</option>
+              <option value="Science">Science</option>
+              <option value="Nature &amp; Environment">Nature &amp; Environment</option>
+              <option value="Technology &amp; AI">Technology &amp; AI</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Arts &amp; Culture">Arts &amp; Culture</option>
+            </optgroup>
+            <optgroup label="Think it through">
+              <option value="Pattern Recognition">Pattern Recognition</option>
+              <option value="Logical Reasoning">Logical Reasoning</option>
+              <option value="Observation">Observation</option>
+              <option value="Creative Problem-Solving">Creative Problem-Solving</option>
+              <option value="Quick Thinking">Quick Thinking</option>
+            </optgroup>
+          </select>
+          <span class="think-lab-setting__detail" id="think-lab-topic-description" aria-live="polite">A fresh blend from every corner of the Lab.</span>
+        </label>
+        <label class="think-lab-setting" for="think-lab-difficulty">
+          <span class="think-lab-setting__label">PACE YOURSELF</span>
+          <select id="think-lab-difficulty" name="difficulty">
+            <option value="Mixed" selected>Mixed levels</option>
+            <option value="Easy">Gentle start</option>
+            <option value="Medium">A little deeper</option>
+            <option value="Hard">Stretch me</option>
+          </select>
+          <span class="think-lab-setting__detail">Choose one level or explore them all.</span>
+        </label>
+        <label class="think-lab-setting" for="think-lab-length">
+          <span class="think-lab-setting__label">HOW LONG?</span>
+          <select id="think-lab-length" name="length">
+            <option value="5" selected>5 questions · quick dive</option>
+            <option value="10">10 questions · deep dive</option>
+          </select>
+          <span class="think-lab-setting__detail" id="think-lab-length-detail">A short set, with no repeated questions.</span>
+        </label>
+        <div class="think-lab-setting think-lab-setting--timer">
+          <span class="think-lab-setting__label">YOUR OWN PACE</span>
+          <label class="think-lab-timer-toggle" for="think-lab-timer">
+            <input id="think-lab-timer" type="checkbox">
+            <span class="think-lab-timer-toggle__switch" aria-hidden="true"></span>
+            <span><strong>Optional 30-second timer</strong><small>Off by default. Learning is not a race.</small></span>
           </label>
-          <div class="think-lab-setting think-lab-setting--timer">
-            <span class="think-lab-setting__label">YOUR PACE</span>
-            <label class="think-lab-timer-toggle" for="think-lab-timer">
-              <input id="think-lab-timer" type="checkbox">
-              <span class="think-lab-timer-toggle__switch" aria-hidden="true"></span>
-              <span><strong>45-second timer</strong><small>Optional. Off by default.</small></span>
-            </label>
-          </div>
-        </div>
-        <div class="think-lab-setup-footer">
-          <p class="think-lab-personal-best">Personal best on this device: <strong><span id="think-lab-best-setup">0</span> pts</strong></p>
-          <button class="think-lab__button" id="think-lab-start" type="button"><span>START CHALLENGE</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
         </div>
       </div>
+      <div class="think-lab-setup__footer">
+        <div class="think-lab-personal-best"><span class="think-lab-personal-best__spark" aria-hidden="true">✦</span><span>Best on this device<br><strong><span id="think-lab-best-setup">0</span> points</strong></span></div>
+        <p class="think-lab-setup__promise">Every question includes an explanation. Wrong answers are part of learning—no points are taken away.</p>
+        <button class="think-lab__button" id="think-lab-start" type="button"><span>START EXPLORING</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
+      </div>
+      <p class="think-lab-form-message" id="think-lab-setup-message" role="status" aria-live="polite"></p>
+    </section>
 
-      <div class="think-lab-view" id="think-lab-active" hidden>
-        <div class="think-lab-round-meta">
-          <div><span class="think-lab-chip" id="think-lab-active-category"></span><span class="think-lab-chip think-lab-chip--soft" id="think-lab-active-difficulty"></span></div>
-          <div class="think-lab-round-count">ROUND <span id="think-lab-round-number">1</span><span aria-hidden="true"> · </span>ONE PUZZLE</div>
-        </div>
-        <div class="think-lab-timer" id="think-lab-timer-wrap" hidden>
-          <div class="think-lab-timer__readout"><span>TIME LEFT</span><strong id="think-lab-timer-value" role="timer" aria-label="45 seconds remaining" aria-live="off">45</strong></div>
-          <div class="think-lab-timer__track" id="think-lab-timer-track" role="progressbar" aria-label="Time remaining" aria-valuemin="0" aria-valuemax="45" aria-valuenow="45"><span id="think-lab-timer-fill"></span></div>
-        </div>
-        <article class="think-lab-question" aria-labelledby="think-lab-question-text">
-          <p class="think-lab-question__kicker">TAKE A MOMENT. LOOK FOR THE LOGIC.</p>
-          <h4 id="think-lab-question-text" tabindex="-1"></h4>
-          <pre class="think-lab-question__visual" id="think-lab-question-visual" hidden></pre>
-          <form id="think-lab-answer-form" novalidate>
-            <fieldset class="think-lab-options">
-              <legend>Choose one answer</legend>
-              <div class="think-lab-options__list" id="think-lab-options"></div>
-            </fieldset>
-            <p class="think-lab-form-message" id="think-lab-form-message" role="status" aria-live="polite"></p>
-            <button class="think-lab__button" id="think-lab-submit" type="submit"><span>SUBMIT ANSWER</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
-          </form>
-        </article>
+    <section class="think-lab-view think-lab-active" id="think-lab-active" aria-labelledby="think-lab-question-text" hidden>
+      <div class="think-lab-active__top">
+        <div class="think-lab-round-meta"><span class="think-lab-chip" id="think-lab-active-category"></span><span class="think-lab-chip think-lab-chip--soft" id="think-lab-active-difficulty"></span></div>
+        <div class="think-lab-round-count"><span>QUESTION</span><strong><span id="think-lab-round-number">1</span><span aria-hidden="true"> / </span><span id="think-lab-round-total">5</span></strong></div>
       </div>
+      <div class="think-lab-progress" id="think-lab-progress-track" role="progressbar" aria-label="Question progress" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="think-lab-progress-fill"></span></div>
+      <div class="think-lab-active__stats"><span>Points so far <strong id="think-lab-running-score">0</strong></span><span id="think-lab-session-mode">A moment to think is always welcome.</span></div>
+      <div class="think-lab-timer" id="think-lab-timer-wrap" hidden>
+        <div class="think-lab-timer__readout"><span>TIME LEFT</span><strong id="think-lab-timer-value" role="timer" aria-label="30 seconds remaining" aria-live="off">30</strong></div>
+        <div class="think-lab-timer__track" id="think-lab-timer-track" role="progressbar" aria-label="Time remaining" aria-valuemin="0" aria-valuemax="30" aria-valuenow="30"><span id="think-lab-timer-fill"></span></div>
+      </div>
+      <article class="think-lab-question">
+        <p class="think-lab-question__kicker">FOLLOW THE QUESTION, NOT THE CLOCK</p>
+        <h3 id="think-lab-question-text" tabindex="-1"></h3>
+        <pre class="think-lab-question__visual" id="think-lab-question-visual" hidden></pre>
+        <form id="think-lab-answer-form" novalidate>
+          <fieldset class="think-lab-options">
+            <legend>Choose the answer that feels right</legend>
+            <div class="think-lab-options__list" id="think-lab-options"></div>
+          </fieldset>
+          <p class="think-lab-form-message" id="think-lab-form-message" role="status" aria-live="polite"></p>
+          <button class="think-lab__button" id="think-lab-submit" type="submit"><span>LOCK IN MY ANSWER</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
+        </form>
+      </article>
+    </section>
 
-      <div class="think-lab-view think-lab-results" id="think-lab-result" hidden>
-        <div class="think-lab-round-meta"><span class="think-lab-chip" id="think-lab-result-category"></span><span class="think-lab-chip think-lab-chip--soft" id="think-lab-result-difficulty"></span></div>
-        <div class="think-lab-feedback" id="think-lab-feedback" role="status" aria-live="polite" tabindex="-1">
-          <p class="think-lab-feedback__eyebrow" id="think-lab-outcome"></p>
-          <h4 id="think-lab-result-title"></h4>
-          <p class="think-lab-feedback__answer">Correct answer: <strong id="think-lab-correct-answer"></strong></p>
-          <p class="think-lab-feedback__explanation" id="think-lab-explanation"></p>
-          <div class="think-lab-score-row">
-            <div><span>POINTS THIS ROUND</span><strong id="think-lab-earned">0</strong></div>
-            <div><span>SESSION TOTAL</span><strong id="think-lab-session-score">0</strong></div>
-            <div><span>PERSONAL BEST</span><strong id="think-lab-best-result">0</strong></div>
-          </div>
-          <p class="think-lab-achievement" id="think-lab-achievement"></p>
-        </div>
-        <div class="think-lab-result-actions">
-          <a class="think-lab__button think-lab__button--community" href="__COMMUNITY_FORM_URL__" target="_blank" rel="noopener noreferrer" aria-label="Join the BUILVANTA community (opens in a new tab)"><span>JOIN THE BUILVANTA COMMUNITY</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></a>
-          <button class="think-lab__button" id="think-lab-next" type="button"><span>TRY ANOTHER CHALLENGE</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
-          <button class="think-lab-secondary" id="think-lab-return" type="button">Return to homepage browsing</button>
-        </div>
+    <section class="think-lab-view think-lab-feedback-view" id="think-lab-feedback-view" aria-labelledby="think-lab-feedback-title" hidden>
+      <div class="think-lab-feedback" id="think-lab-feedback" role="status" aria-live="polite" tabindex="-1">
+        <p class="think-lab-feedback__eyebrow" id="think-lab-outcome"></p>
+        <h3 id="think-lab-feedback-title"></h3>
+        <p class="think-lab-feedback__answer">The answer: <strong id="think-lab-correct-answer"></strong></p>
+        <p class="think-lab-feedback__explanation" id="think-lab-explanation"></p>
+        <div class="think-lab-feedback__footer"><span id="think-lab-earned">+0 points</span><span id="think-lab-feedback-progress">Question 1 complete</span></div>
       </div>
-    </div>
-    <p class="think-lab-game__footnote">Your personal best is stored only in this browser. There is no account or leaderboard.</p>
-  </section>
+      <div class="think-lab-feedback-actions"><button class="think-lab__button" id="think-lab-next" type="button"><span>CONTINUE EXPLORING</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button><button class="think-lab-secondary" id="think-lab-exit-review" type="button">Choose another topic</button></div>
+    </section>
+
+    <section class="think-lab-view think-lab-results" id="think-lab-result" aria-labelledby="think-lab-result-title" hidden>
+      <div class="think-lab-results__hero">
+        <p class="think-lab-results__eyebrow" id="think-lab-result-eyebrow">YOUR EXPLORATION, COMPLETE</p>
+        <h3 id="think-lab-result-title" tabindex="-1">Every round builds something.</h3>
+        <p id="think-lab-result-message">See what you discovered and where your curiosity might take you next.</p>
+        <div class="think-lab-score-row">
+          <div><span>ANSWERS FOUND</span><strong><span id="think-lab-correct-count">0</span><small> / <span id="think-lab-result-total">5</span></small></strong></div>
+          <div><span>POINTS EARNED</span><strong id="think-lab-session-score">0</strong></div>
+          <div><span>PERSONAL BEST</span><strong id="think-lab-best-result">0</strong></div>
+        </div>
+        <p class="think-lab-achievement" id="think-lab-achievement"></p>
+      </div>
+      <div class="think-lab-review">
+        <div class="think-lab-review__heading"><p class="think-lab-section-label">TAKE SOMETHING WITH YOU</p><h4>Your questions, revisited.</h4><p>Each explanation is a little more knowledge to carry forward.</p></div>
+        <div class="think-lab-review__list" id="think-lab-review-list"></div>
+      </div>
+      <div class="think-lab-result-actions">
+        <a class="think-lab__button think-lab__button--community" href="__COMMUNITY_FORM_URL__" target="_blank" rel="noopener noreferrer" aria-label="Join the BUILVANTA community (opens in a new tab)"><span>JOIN THE BUILVANTA COMMUNITY</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></a>
+        <button class="think-lab__button" id="think-lab-replay" type="button"><span>PLAY ANOTHER ROUND</span><span class="think-lab__button-arrow" aria-hidden="true">↗</span></button>
+        <button class="think-lab-secondary" id="think-lab-change-topic" type="button">Choose a different topic</button>
+        <a class="think-lab-home-link" href="index.html">Back to the home page <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <p class="think-lab-game__footnote">Your best score is stored only in this browser. No account, personal information or public leaderboard is used.</p>
+  </div>
 </section>

@@ -1,6 +1,6 @@
 /* Homepage hero panel only. Do not affect the shared header, footer, sidebar or other pages. */
 .home-page .workspace{height:auto;min-height:100svh;background:#FFFFFF}
-.home-page .topbar{background:#212121}
+.home-page .topbar{background:var(--brand-topbar-gradient);color:#fff}
 .home-page .home-main{display:flex;flex:0 0 auto;flex-direction:column;align-items:center;justify-content:flex-start;min-height:0;padding-block:0;background:#FFFFFF}
 .home-page .welcome-panel{display:flex;width:min(720px,100%);align-items:center;justify-content:center;padding-block:clamp(30px,5vh,52px);padding-inline:0;background:#fff;color:#171717}
 .home-page .welcome{width:min(640px,100%);color:#171717}
@@ -380,3 +380,102 @@
   .home-page .who-for-card.is-reveal-ready,.home-page .who-for-card.is-reveal-ready.is-visible,
   .home-page .who-for-card:hover,.home-page .who-for-card:hover .who-for-card__icon{opacity:1;transform:none}
 }
+
+
+/* Official Instagram profile link beside the homepage top-bar tagline. */
+.home-page .topbar-instagram{
+  display:grid;
+  flex:0 0 44px;
+  width:44px;
+  height:44px;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;
+  background:rgba(255,255,255,.035);
+  color:#fff;
+  transition:background-color .18s ease,transform .18s ease,border-color .18s ease;
+}
+.home-page .topbar-instagram img{
+  display:block;
+  width:22px;
+  height:22px;
+}
+.home-page .topbar-instagram:hover{
+  transform:translateY(-1px);
+  border-color:rgba(255,255,255,.24);
+  background:rgba(255,255,255,.1);
+}
+.home-page .topbar-instagram:focus-visible{
+  outline:2px solid #fff;
+  outline-offset:3px;
+  box-shadow:0 0 0 6px rgba(255,255,255,.14);
+}
+@media(prefers-reduced-motion:reduce){
+  .home-page .topbar-instagram{transition:none}
+  .home-page .topbar-instagram:hover{transform:none}
+}
+
+/* Homepage editorial story: a separate, white visual chapter after existing sections. */
+.home-page .home-story{
+  position:relative;
+  isolation:isolate;
+  width:calc(100% + 80px);
+  margin-inline:-40px;
+  padding:clamp(78px,8.5vw,132px) 0 clamp(88px,9vw,142px);
+  overflow:hidden;
+  background:#fff;
+  color:#202020;
+}
+.home-page .home-story__inner{width:min(1280px,100%);margin:0 auto;padding-inline:clamp(28px,7vw,96px)}
+.home-page .home-story__header{max-width:1050px;margin:0 auto clamp(38px,5vw,64px)}
+.home-page .home-story__header h2{max-width:990px;margin:0;color:#171717;font-size:clamp(38px,6.4vw,82px);font-weight:850;letter-spacing:-.065em;line-height:.98;text-wrap:balance}
+.home-page .home-story__header h2::after{display:block;width:clamp(68px,9vw,112px);height:3px;margin-top:28px;background:linear-gradient(105deg,#FFB800 0%,#FF6A00 25%,#F00091 52%,#8B19F5 76%,#1677FF 100%);content:""}
+.home-page .home-story__subtitle{margin:21px 0 0;color:#59606a;font-size:clamp(18px,2.1vw,24px);line-height:1.5}
+.home-page .home-story__prose{width:min(740px,100%);margin:0 auto;color:#424852;font-size:clamp(16px,1.5vw,19px);line-height:1.86}
+.home-page .home-story__prose p{margin:0 0 17px}
+.home-page .home-story__prose p:last-child{margin-bottom:0}
+.home-page .home-story__emphasis{color:#171717;font-size:1.14em;letter-spacing:-.025em}
+.home-page .home-story__figure{position:relative;min-width:0;margin:0;overflow:hidden;border:1px solid rgba(25,32,45,.09);border-radius:18px;background:#f1f2f3;box-shadow:0 20px 55px rgba(25,32,45,.1)}
+.home-page .home-story__figure::before{position:absolute;z-index:1;inset:0 0 auto;height:3px;background:linear-gradient(105deg,#FFB800 0%,#FF6A00 25%,#F00091 52%,#8B19F5 76%,#1677FF 100%);content:""}
+.home-page .home-story__figure img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center}
+.home-page .home-story__figure--cinematic{width:min(100%,1040px);margin:clamp(42px,6vw,78px) auto clamp(72px,8vw,110px);border-radius:20px}
+.home-page .home-story__chapter{display:grid;width:min(1100px,100%);margin:clamp(64px,8vw,104px) auto;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);grid-template-areas:"copy image";gap:clamp(28px,5vw,72px);align-items:center}
+.home-page .home-story__chapter .home-story__prose{grid-area:copy;width:100%;margin:0}
+.home-page .home-story__chapter .home-story__figure{grid-area:image;width:100%}
+.home-page .home-story__chapter--image-left{grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);grid-template-areas:"image copy"}
+.home-page .home-story__chapter--image-left .home-story__prose{grid-area:copy}
+.home-page .home-story__chapter--image-left .home-story__figure{grid-area:image}
+.home-page .home-story__chapter--image-right .home-story__prose{grid-area:copy}
+.home-page .home-story__chapter--image-right .home-story__figure{grid-area:image}
+.home-page .home-story__figure--impact{margin-top:clamp(45px,6vw,78px);margin-bottom:clamp(72px,8vw,110px)}
+.home-page .home-story__prose--reflective{margin-top:clamp(58px,7vw,92px);font-size:clamp(17px,1.65vw,21px)}
+.home-page .home-story__ending{width:min(840px,100%);margin:clamp(72px,9vw,116px) auto 0;padding-top:clamp(34px,5vw,56px);border-top:1px solid #e8e8eb;text-align:center;color:#424852;font-size:clamp(17px,1.65vw,21px);line-height:1.75}
+.home-page .home-story__ending p{margin:0}
+.home-page .home-story__final-line{margin-top:clamp(34px,5vw,58px)!important;color:#171717;font-size:clamp(30px,4.4vw,54px);font-weight:800;letter-spacing:-.045em;line-height:1.12;text-wrap:balance}
+.home-page .home-story__signature{position:relative;width:min(840px,100%);margin:clamp(68px,8vw,100px) auto 0;padding-top:34px;border-top:1px solid #e8e8eb;text-align:center}
+.home-page .home-story__signature::before{position:absolute;top:-2px;left:50%;width:96px;height:3px;transform:translateX(-50%);background:linear-gradient(105deg,#FFB800 0%,#FF6A00 25%,#F00091 52%,#8B19F5 76%,#1677FF 100%);content:""}
+.home-page .home-story__signature h3{margin:0 0 12px;color:#171717;font-size:clamp(31px,4vw,46px);font-weight:850;letter-spacing:.06em;line-height:1.05}
+.home-page .home-story__signature p{margin:8px 0 0;color:#505660;font-size:clamp(15px,1.4vw,18px);line-height:1.6}
+.home-page .home-story__signature p:last-child{color:#242832}
+.home-page .home-story [data-story-reveal].story-reveal-ready{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.65,.3,1);transition-delay:var(--story-reveal-delay,0ms)}
+.home-page .home-story [data-story-reveal].story-reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){.home-page .home-story{width:calc(100% + 28px);margin-inline:-14px}.home-page .home-story__chapter{grid-template-columns:minmax(0,1fr) minmax(245px,.92fr);gap:30px}.home-page .home-story__chapter--image-left{grid-template-columns:minmax(245px,.92fr) minmax(0,1fr)}}
+@media(max-width:700px){.home-page .home-story{width:calc(100% + 24px);margin-inline:-12px;padding-block:68px 82px}.home-page .home-story__inner{padding-inline:24px}.home-page .home-story__header{margin-bottom:34px}.home-page .home-story__header h2{font-size:clamp(37px,9.6vw,58px)}.home-page .home-story__subtitle{margin-top:18px}.home-page .home-story__prose{font-size:16px;line-height:1.78}.home-page .home-story__chapter,.home-page .home-story__chapter--image-left,.home-page .home-story__chapter--image-right{width:100%;margin:58px auto;grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "image";gap:24px}.home-page .home-story__figure{border-radius:15px}.home-page .home-story__figure--cinematic{margin-block:42px 68px;border-radius:16px}.home-page .home-story__figure--impact{margin-top:42px;margin-bottom:68px}.home-page .home-story__prose--reflective{margin-top:56px}.home-page .home-story__ending{margin-top:70px}.home-page .home-story__signature{margin-top:64px}}
+@media(max-width:360px){.home-page .home-story{width:calc(100% + 18px);margin-inline:-9px;padding-block:60px 72px}.home-page .home-story__inner{padding-inline:20px}.home-page .home-story__header h2{font-size:clamp(34px,10vw,42px)}.home-page .home-story__prose{font-size:15px}.home-page .home-story__figure{border-radius:13px}}
+@media(prefers-reduced-motion:reduce){.home-page .home-story [data-story-reveal].story-reveal-ready,.home-page .home-story [data-story-reveal].story-reveal-ready.is-visible{opacity:1;transform:none;transition:none}}
+
+
+/* Video invitation placed directly after the Who Belongs Here section. */
+.home-page .home-audience-film{width:100%;padding:clamp(58px,8vw,104px) clamp(18px,4vw,48px) clamp(64px,8vw,108px);background:#fff;color:#171717}
+.home-page .home-audience-film__inner{width:min(1080px,100%);margin:0 auto;text-align:center}
+.home-page .home-audience-film__intro{max-width:760px;margin:0 auto}
+.home-page .home-audience-film__eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0 0 13px;color:#7127b5;font-size:10px;font-weight:800;letter-spacing:.17em;line-height:1.5}
+.home-page .home-audience-film__eyebrow::before,.home-page .home-audience-film__eyebrow::after{width:20px;height:2px;background:var(--primary-cta-gradient);content:""}
+.home-page .home-audience-film__intro h2{margin:0;color:#171523;font-size:clamp(29px,4vw,48px);font-weight:800;letter-spacing:-.045em;line-height:1.08;text-wrap:balance}
+.home-page .home-audience-film__intro>p:last-child{max-width:610px;margin:15px auto 0;color:#5c5b67;font-size:clamp(14px,1.5vw,17px);line-height:1.7}
+.home-page .home-audience-film__frame{width:min(100%,1000px);margin:clamp(25px,4vw,42px) auto 0;overflow:hidden;border:1px solid rgba(40,28,60,.16);border-radius:20px;background:#111522;box-shadow:0 24px 66px rgba(24,16,40,.14)}
+.home-page .home-audience-film__video{display:block;width:100%;height:auto;max-height:min(72vh,720px);margin:0 auto;object-fit:contain;background:#0e1422}
+.home-page .home-audience-film__frame figcaption{padding:11px 16px 13px;background:#fbfaff;color:#676271;font-size:11px;line-height:1.5}
+.home-page .home-audience-film__cta{width:min(100%,360px);min-height:64px;margin:26px auto 0;border-radius:16px}
+.home-page .home-audience-film__cta .button-arrow{flex:0 0 36px;width:36px;height:36px}
+@media(max-width:700px){.home-page .home-audience-film{padding:48px 18px 60px}.home-page .home-audience-film__intro h2{font-size:clamp(27px,7vw,36px)}.home-page .home-audience-film__intro>p:last-child{margin-top:12px;font-size:14px}.home-page .home-audience-film__frame{margin-top:24px;border-radius:14px}.home-page .home-audience-film__frame figcaption{padding:9px 12px 11px;font-size:10px}.home-page .home-audience-film__cta{min-height:58px;margin-top:21px;border-radius:13px}}

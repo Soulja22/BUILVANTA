@@ -19,3 +19,13 @@ Local optimized desktop source: builvanta-intro-background-1080p.mp4 (H.264, 192
 Local optimized mobile source: builvanta-intro-background-mobile.mp4 (H.264, 1280×720, 24 fps, 5.041667 seconds, 923,793 bytes).
 Poster fallback: builvanta-intro-poster.webp (1280 px wide, extracted at 0.4 seconds, approximately 24 KB).
 The page will use only these local asset paths; the public page will not expose or link to the Drive URL.
+
+
+Homepage community video after “Who Belongs Here”
+
+Original Drive URL: https://drive.google.com/file/d/1_AHwSKMh65J1OgFgrLaWQ_PzLQxoj6ve/view?usp=sharing
+Drive file ID: 1_AHwSKMh65J1OgFgrLaWQ_PzLQxoj6ve
+Original filename: builvanta_15s_1080p_voiced.mp4
+Source metadata: video/mp4, 14,726,446 bytes, H.264 1920×1080 at 24 fps (15.041667 seconds), AAC voiceover (14.8 seconds); Drive reports shared=true and canDownload=true. Drive permissions were not changed.
+Local web asset: who-belongs-here.mp4; H.264 re-encode at CRF 23, 1920×1080, 24 fps, AAC audio stream copied, fast-start MP4, 5,683,526 bytes. Poster: who-belongs-here-poster.webp, 1280×720 frame extracted at 10 seconds to show the group collaborating around a small robot.
+The homepage uses relative local paths, native playback controls, and the existing community form CTA directly below the player. The public page does not display or link to the Google Drive URL.
