@@ -6,17 +6,31 @@
       <p>See how curiosity, creativity and collaboration come to life at BUILVANTA.</p>
     </header>
 
-    <figure class="home-audience-film__frame">
-      <video class="home-audience-film__video" controls playsinline preload="metadata" poster="assets/videos/who-belongs-here-poster.webp" aria-label="BUILVANTA community video showing young people learning, creating and collaborating.">
-        <source src="assets/videos/who-belongs-here.mp4" type="video/mp4">
-        <p>Your browser does not support HTML video playback.</p>
-      </video>
-      <figcaption>Curiosity, creativity and collaboration—building together.</figcaption>
-    </figure>
+    <div class="home-audience-film__media">
+      <figure class="home-audience-film__frame">
+        <video class="home-audience-film__video" playsinline preload="metadata" poster="assets/videos/who-belongs-here-poster.webp" aria-label="BUILVANTA film showing young people creating, collaborating and building together." aria-describedby="home-audience-film-caption" disablepictureinpicture disableremoteplayback>
+          <source src="assets/videos/who-belongs-here.mp4" type="video/mp4">
+          <p>Your browser does not support HTML video playback.</p>
+        </video>
+        <div class="home-audience-film__controls" role="group" aria-label="Video playback controls">
+          <button class="home-audience-film__control-button" type="button" data-video-toggle aria-label="Play video" title="Play video">
+            <svg data-play-icon viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z" fill="currentColor"/></svg>
+            <svg data-pause-icon viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M7 5h4v14H7zm6 0h4v14h-4z" fill="currentColor"/></svg>
+          </button>
+          <input class="home-audience-film__seek" type="range" min="0" max="100" step="0.1" value="0" data-video-seek aria-label="Video progress" aria-valuetext="0:00 of 0:17" disabled>
+          <output class="home-audience-film__time" data-video-time aria-live="off">0:00 / 0:17</output>
+          <button class="home-audience-film__control-button home-audience-film__mute" type="button" data-video-mute aria-label="Mute video audio" aria-pressed="false" title="Mute video audio">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4z" fill="currentColor"/><path d="M16 9a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <figcaption class="home-audience-film__caption" id="home-audience-film-caption">Different places. Different ideas. Different hands. But together, we build something greater.</figcaption>
+        <p class="home-audience-film__status" data-video-status aria-live="polite"></p>
+      </figure>
 
-    <a class="join-button home-audience-film__cta" href="__COMMUNITY_FORM_URL__" target="_blank" rel="noopener noreferrer">
-      <span>JOIN THE BUILVANTA COMMUNITY</span>
-      <span class="button-arrow" aria-hidden="true">↗</span>
-    </a>
+      <a class="join-button home-audience-film__cta" href="__COMMUNITY_FORM_URL__" target="_blank" rel="noopener noreferrer">
+        <span>JOIN THE BUILVANTA COMMUNITY</span>
+        <span class="button-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
   </div>
 </section>

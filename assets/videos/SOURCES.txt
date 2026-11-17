@@ -28,4 +28,13 @@ Drive file ID: 1_AHwSKMh65J1OgFgrLaWQ_PzLQxoj6ve
 Original filename: builvanta_15s_1080p_voiced.mp4
 Source metadata: video/mp4, 14,726,446 bytes, H.264 1920×1080 at 24 fps (15.041667 seconds), AAC voiceover (14.8 seconds); Drive reports shared=true and canDownload=true. Drive permissions were not changed.
 Local web asset: who-belongs-here.mp4; H.264 re-encode at CRF 23, 1920×1080, 24 fps, AAC audio stream copied, fast-start MP4, 5,683,526 bytes. Poster: who-belongs-here-poster.webp, 1280×720 frame extracted at 10 seconds to show the group collaborating around a small robot.
-The homepage uses relative local paths, native playback controls, and the existing community form CTA directly below the player. The public page does not display or link to the Google Drive URL.
+Historical entry: the original clip used native playback controls and was later superseded by the replacement entry below. The homepage does not display or link to its Drive URL.
+
+
+Replacement homepage community video — 2026-11-17
+
+Drive file ID: 10PQsIAukUt9a3oFCnAG1RKV99gLydq-_
+Original filename: builvanta_final_logo_1080p.mp4
+Source metadata: video/mp4, 14,082,718 bytes; H.264 1920×1080 at 24 fps, 17.25 seconds; AAC voiceover/music. Drive reports shared=true and canDownload=true; permissions were not modified.
+Active local web asset: who-belongs-here.mp4; H.264 re-encode at CRF 23, 1920×1080/24 fps, AAC audio copied, fast-start MP4, 5,621,358 bytes. Poster: who-belongs-here-poster.webp, 1280×720 frame extracted at 10 seconds. This supersedes the earlier community clip entry above.
+The public player uses custom play/pause, seek and audio controls only; it has no native fullscreen or download controls, no autoplay, no source link, and suppresses the video context menu. The entire original 16:9 frame is preserved in the desktop split layout.
