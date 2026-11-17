@@ -133,7 +133,7 @@ body.content-page .workspace>.site-footer a:focus-visible{outline:2px solid #fff
 
 
 /* Shared social links: right-aligned profile icons and visible Follow us labels. */
-body .workspace>.topbar .topbar-social{display:flex;align-items:center;gap:8px;flex:0 0 auto;white-space:nowrap}
+body .workspace>.topbar .topbar-social{display:flex;align-items:center;gap:8px;flex:0 0 auto;margin-left:auto;white-space:nowrap}
 body .workspace>.topbar .topbar-social__label{color:inherit;font-size:10px;font-weight:700;letter-spacing:.035em}
 body .workspace>.topbar .topbar-social__links{display:flex;align-items:center;gap:6px}
 body .workspace>.topbar .topbar-social__link{display:grid;flex:0 0 42px;width:42px;height:42px;place-items:center;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(13,12,24,.3);transition:background .18s ease,transform .18s ease,border-color .18s ease}
