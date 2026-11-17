@@ -382,39 +382,6 @@
 }
 
 
-/* Official Instagram profile link beside the homepage top-bar tagline. */
-.home-page .topbar-instagram{
-  display:grid;
-  flex:0 0 44px;
-  width:44px;
-  height:44px;
-  place-items:center;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:12px;
-  background:rgba(255,255,255,.035);
-  color:#fff;
-  transition:background-color .18s ease,transform .18s ease,border-color .18s ease;
-}
-.home-page .topbar-instagram img{
-  display:block;
-  width:22px;
-  height:22px;
-}
-.home-page .topbar-instagram:hover{
-  transform:translateY(-1px);
-  border-color:rgba(255,255,255,.24);
-  background:rgba(255,255,255,.1);
-}
-.home-page .topbar-instagram:focus-visible{
-  outline:2px solid #fff;
-  outline-offset:3px;
-  box-shadow:0 0 0 6px rgba(255,255,255,.14);
-}
-@media(prefers-reduced-motion:reduce){
-  .home-page .topbar-instagram{transition:none}
-  .home-page .topbar-instagram:hover{transform:none}
-}
-
 /* Homepage editorial story: a separate, white visual chapter after existing sections. */
 .home-page .home-story{
   position:relative;

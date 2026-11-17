@@ -130,3 +130,28 @@ body .workspace>.site-footer .site-footer__instagram:hover{transform:translateY(
 body.content-page .workspace>.site-footer a:focus-visible{outline:2px solid #fff;outline-offset:3px;box-shadow:0 0 0 2px #4c2284}
 @media(max-width:540px){body .workspace>.site-footer{grid-template-columns:minmax(0,1fr);gap:4px;padding:13px 18px 14px}body .workspace>.site-footer .site-footer__brandline{justify-self:start;text-align:left}body .workspace>.site-footer .site-footer__links{display:grid;width:100%;grid-template-columns:minmax(0,1fr) auto;justify-self:stretch;gap:8px}body .workspace>.site-footer .site-footer__email{justify-self:start}body .workspace>.site-footer .site-footer__instagram{justify-self:end}}
 @media(prefers-reduced-motion:reduce){body .workspace>.topbar .topbar-instagram,body .workspace>.site-footer .site-footer__email,body .workspace>.site-footer .site-footer__instagram{transition:none}body .workspace>.topbar .topbar-instagram:hover,body .workspace>.site-footer .site-footer__instagram:hover{transform:none}}
+
+
+/* Shared social links: right-aligned profile icons and visible Follow us labels. */
+body .workspace>.topbar .topbar-social{display:flex;align-items:center;gap:8px;flex:0 0 auto;white-space:nowrap}
+body .workspace>.topbar .topbar-social__label{color:inherit;font-size:10px;font-weight:700;letter-spacing:.035em}
+body .workspace>.topbar .topbar-social__links{display:flex;align-items:center;gap:6px}
+body .workspace>.topbar .topbar-social__link{display:grid;flex:0 0 42px;width:42px;height:42px;place-items:center;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(13,12,24,.3);transition:background .18s ease,transform .18s ease,border-color .18s ease}
+body .workspace>.topbar .topbar-social__link img{display:block;width:22px;height:22px;object-fit:contain}
+body .workspace>.topbar .topbar-social__link--tiktok{background:#000}
+body .workspace>.topbar .topbar-social__link--tiktok img{width:29px;height:29px;border-radius:50%}
+body .workspace>.topbar .topbar-social__link:hover{transform:translateY(-1px);background:rgba(13,12,24,.55);border-color:rgba(255,255,255,.4)}
+body .workspace>.topbar .topbar-social__link--tiktok:hover{background:#111}
+body .workspace>.site-footer .site-footer__social{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+body .workspace>.site-footer .site-footer__follow{color:rgba(255,255,255,.82);font-size:11px;font-weight:600}
+body .workspace>.site-footer .site-footer__social-link{display:inline-grid;flex:0 0 44px;width:44px;height:44px;place-items:center;border:1px solid rgba(255,255,255,.13);border-radius:50%;background:rgba(255,255,255,.07);transition:background .18s ease,transform .18s ease}
+body .workspace>.site-footer .site-footer__social-link img{display:block;width:22px;height:22px;object-fit:contain}
+body .workspace>.site-footer .site-footer__tiktok{background:#000}
+body .workspace>.site-footer .site-footer__tiktok img{width:30px;height:30px;border-radius:50%}
+body .workspace>.site-footer .site-footer__social-link:hover{transform:translateY(-1px);background:rgba(255,255,255,.16)}
+body .workspace>.site-footer .site-footer__tiktok:hover{background:#111}
+@media(max-width:900px){body .workspace>.topbar .topbar-social{margin-left:auto}}
+@media(max-width:700px){body .workspace>.topbar .topbar-note{margin-left:0}body .workspace>.topbar .topbar-social{margin-left:auto}}
+@media(max-width:540px){body .workspace>.topbar{gap:5px;padding-inline:10px;font-size:13px}body .workspace>.topbar .topbar-note{display:block;margin-left:0;font-size:8px;white-space:nowrap}body .workspace>.topbar .icon-button{flex:0 0 30px;width:30px;height:30px}body .workspace>.topbar .topbar-social{gap:5px}body .workspace>.topbar .topbar-social__label{font-size:8px}body .workspace>.topbar .topbar-social__links{gap:4px}body .workspace>.topbar .topbar-social__link{flex-basis:30px;width:30px;height:30px}body .workspace>.topbar .topbar-social__link--instagram img{width:18px;height:18px}body .workspace>.topbar .topbar-social__link--tiktok img{width:23px;height:23px}body .workspace>.site-footer .site-footer__links{display:flex;flex-direction:column;align-items:stretch;justify-self:stretch;width:100%;gap:4px}body .workspace>.site-footer .site-footer__email{align-self:flex-start}body .workspace>.site-footer .site-footer__social{align-self:flex-end;gap:7px}}
+@media(max-width:360px){body .workspace>.topbar{padding-inline:10px;gap:6px}body .workspace>.topbar .topbar-note{display:none}body .workspace>.topbar .topbar-social{gap:5px}body .workspace>.topbar .topbar-social__label{font-size:8px}body .workspace>.topbar .topbar-social__links{gap:4px}body .workspace>.topbar .topbar-social__link{flex-basis:32px;width:32px;height:32px}body .workspace>.topbar .topbar-social__link--instagram img{width:18px;height:18px}body .workspace>.topbar .topbar-social__link--tiktok img{width:23px;height:23px}}
+@media(prefers-reduced-motion:reduce){body .workspace>.topbar .topbar-social__link,body .workspace>.site-footer .site-footer__social-link{transition:none}body .workspace>.topbar .topbar-social__link:hover,body .workspace>.site-footer .site-footer__social-link:hover{transform:none}}

@@ -1,0 +1,10 @@
+BUILVANTA TikTok profile icon
+
+Active asset: tiktok-icon-official.png
+Asset: TikTok_Icon_Black_Circle.png, copied unchanged from TikTok's official Logo Pack (TikTok for Developers). The original 1200×1200 RGBA artwork contains the official cyan, pink/red, white and black colors.
+
+Official asset-pack URL: https://sf16-va.tiktokcdn.com/obj/eden-va2/uvzhqeh7nuhd/tt4d/logo-pack.zip
+Official developer design guidelines: https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation
+TikTok Brand Hub logo guidance: https://www.tiktokbrandhub.com/visual-identity/logo
+
+Usage: linked to https://www.tiktok.com/@builvanta in BUILVANTA's shared top bar and footer. The supplied icon is used on its black circular background, consistent with TikTok's guidance that the iconic-color primary logo is used on black or white backgrounds. Artwork has not been recolored, cropped, or altered.
